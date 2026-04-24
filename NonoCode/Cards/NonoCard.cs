@@ -5,7 +5,7 @@ using Godot;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Logging;
-using Nono.NonoCode.Charaters;
+using MoeNegiMod.Nono.Character;
 using Nono.NonoCode.Extensions;
 
 

@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 using MoeNegiMod.Nono.Cards;
 using System;
 using Nono.NonoCode.Extensions;
-using Nono.NonoCode.Charaters;
+using MoeNegiMod.Nono.Relics;
 
 namespace MoeNegiMod.Nono.Character;
 
@@ -26,8 +26,9 @@ public class Nono : PlaceholderCharacterModel
     public override Color NameColor => Color;
 	public override CharacterGender Gender => CharacterGender.Feminine;
 	public override int StartingHp => 80;
+    //初始生命值设定为80。
 
-	public override IEnumerable<CardModel> StartingDeck => [
+    public override IEnumerable<CardModel> StartingDeck => [
 	/*	ModelDb.Card<NonoAttack>(),
 		ModelDb.Card<NonoAttack>(),
         ModelDb.Card<NonoBlock>(),
@@ -35,11 +36,12 @@ public class Nono : PlaceholderCharacterModel
 		ModelDb.Card<EmergencyTreatment>(),
 
 	];
+    //初始卡牌
+    public override IReadOnlyList<RelicModel> StartingRelics => new _003C_003Ez__ReadOnlySingleElementList<RelicModel>((RelicModel)(object)ModelDb.Relic<NonoNoBag>());
 
-	public override IReadOnlyList<RelicModel> StartingRelics => new List<RelicModel> { ModelDb.GetById<RelicModel>(new ModelId("RELIC", "BURNING_BLOOD")) }.AsReadOnly();
-
-	public override CardPoolModel CardPool => ModelDb.CardPool<NonoCardPool>();
-	public override RelicPoolModel RelicPool => ModelDb.RelicPool<SharedRelicPool>();
+    //初始遗物
+    public override CardPoolModel CardPool => ModelDb.CardPool<NonoCardPool>();
+	public override RelicPoolModel RelicPool => ModelDb.RelicPool<NonoRelicPool>();
 	public override PotionPoolModel PotionPool => ModelDb.PotionPool<SharedPotionPool>();
 
 	/*  PlaceholderCharacterModel will utilize placeholder basegame assets for most of your character assets until you
