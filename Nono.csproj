@@ -1,0 +1,50 @@
+﻿<Project Sdk="Godot.NET.Sdk/4.5.1">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <AssemblyTitle></AssemblyTitle>
+    <RootNamespace>$(MSBuildProjectName.Replace(" ","_"))</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Nono\Images\Cards\card.png" />
+    <Content Include="Nono\Images\Cards\nono_attack.png" />
+    <Content Include="Nono\Images\Charui\big_energy.png" />
+    <Content Include="Nono\Images\Charui\character_icon_char_name.png" />
+    <Content Include="Nono\Images\Charui\char_select_char_name.png" />
+    <Content Include="Nono\Images\Charui\map_marker_char_name.png" />
+    <Content Include="Nono\Images\Charui\Nono.png" />
+    <Content Include="Nono\Images\Charui\NonoBg.png" />
+    <Content Include="Nono\Images\Charui\text_energy.png" />
+    <Content Include="Nono\Images\Relics\nono_no_bag.png" />
+    <Content Include="Nono\localization\zhs\ancients.json" />
+    <Content Include="Nono\localization\zhs\cards.json" />
+    <Content Include="Nono\localization\zhs\characters.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>F:\steam\steamapps\common\Slay the Spire 2\data_sts2_windows_x86_64\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseLib">
+      <HintPath>BaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="GodotSharp">
+      <HintPath>F:\steam\steamapps\common\Slay the Spire 2\data_sts2_windows_x86_64\GodotSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="sts2">
+      <HintPath>F:\steam\steamapps\common\Slay the Spire 2\data_sts2_windows_x86_64\sts2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NonoCode\Cards\Rare\" />
+    <Folder Include="NonoCode\Cards\Ancient\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="0.1.9" />
+	<AdditionalFiles Include="Nono\localization/**/*.json" />
+  </ItemGroup>
+</Project>

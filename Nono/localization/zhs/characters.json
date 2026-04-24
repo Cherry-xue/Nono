@@ -1,0 +1,16 @@
+{
+  "MOENEGIMOD-NONO.title": "诺诺",
+  "MOENEGIMOD-NONO.titleObject": "诺诺",
+  "MOENEGIMOD-NONO.description": "来自异世界的魔法药剂师。\n身边常伴着一只黑猫。",
+  "MOENEGIMOD-NONO.pronounObject": "她",
+  "MOENEGIMOD-NONO.possessiveAdjective": "她的",
+  "MOENEGIMOD-NONO.pronounPossessive": "她的",
+  "MOENEGIMOD-NONO.pronounSubject": "她",
+  "MOENEGIMOD-NONO.cardsModifierTitle": "诺诺的卡牌",
+  "MOENEGIMOD-NONO.cardsModifierDescription": "诺诺的卡牌将出现在商店与奖励中",
+  "MOENEGIMOD-NONO.aromaPrinciple": "",
+  "MOENEGIMOD-NONO.eventDeathPrevention": "好困，我先睡一会。",
+  "MOENEGIMOD-NONO.banter.alive.endTurnPing": "没关系,我不着急。",
+  "MOENEGIMOD-NONO.banter.dead.endTurnPing": "......",
+  "MOENEGIMOD-NONO.goldMonologue": "......"
+}
