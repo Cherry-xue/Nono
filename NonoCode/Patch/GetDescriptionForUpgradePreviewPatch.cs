@@ -9,7 +9,7 @@ public static class GetDescriptionForUpgradePreviewPatch
     // 精确拦截目标方法
     [HarmonyPatch(typeof(CardModel), "GetDescriptionForUpgradePreview")]
     [HarmonyPriority(int.MaxValue)]
-    public static class UpgradeDescriptionPatch
+    public static class GetDescriptionForUpgradePreview
     {
         // 在方法执行后修改返回值
         static void Postfix(CardModel __instance , ref string __result)

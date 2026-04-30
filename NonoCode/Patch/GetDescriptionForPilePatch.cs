@@ -12,7 +12,7 @@ public static class GetDescriptionForPilePatch
     // 精确拦截目标方法
     [HarmonyPatch(typeof(CardModel), "GetDescriptionForPile",typeof(PileType), typeof(Creature))]
     [HarmonyPriority(int.MaxValue)]
-    public static class UpgradeDescriptionPatch
+    public static class GetDescriptionForPile
     {
         // 在方法执行后修改返回值
         static void Postfix(CardModel __instance,ref string __result)
