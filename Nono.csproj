@@ -42,6 +42,8 @@
   <ItemGroup>
     <Folder Include="NonoCode\Cards\Rare\" />
     <Folder Include="NonoCode\Cards\Ancient\" />
+    <Folder Include="Nono\Images\Packed\Sprite_Fonts\" />
+    <Folder Include="Nono\Scenes\Combat\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="0.1.9" />

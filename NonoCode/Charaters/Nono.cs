@@ -16,31 +16,28 @@ namespace MoeNegiMod.Nono.Character;
 public class Nono : PlaceholderCharacterModel
 {
 	public const string CharacterId = "Nono";
-
-	//public override string CustomCharacterSelectBg => "res://Selphina/Scenes/Char_Select/char_select_bg_selphina.tscn";
-
 	public override string PlaceholderID => "necrobinder";
 
 	public static readonly Color Color = new Color("7FFFD4");
-    public override Color MapDrawingColor => Color;
-    public override Color NameColor => Color;
+	public override Color MapDrawingColor => Color;
+	public override Color NameColor => Color;
 	public override CharacterGender Gender => CharacterGender.Feminine;
 	public override int StartingHp => 80;
-    //初始生命值设定为80。
-
-    public override IEnumerable<CardModel> StartingDeck => [
+	//初始生命值设定为80。
+	public override bool ShouldAlwaysShowStarCounter => true;
+	//始终显示星辉计数器。
+	public override IEnumerable<CardModel> StartingDeck => [
 	/*	ModelDb.Card<NonoAttack>(),
 		ModelDb.Card<NonoAttack>(),
-        ModelDb.Card<NonoBlock>(),
-        ModelDb.Card<CatBite>(),*/
+		ModelDb.Card<NonoBlock>(),
+		ModelDb.Card<CatBite>(),*/
 		ModelDb.Card<EmergencyTreatment>(),
 
 	];
-    //初始卡牌
-    public override IReadOnlyList<RelicModel> StartingRelics => new _003C_003Ez__ReadOnlySingleElementList<RelicModel>((RelicModel)(object)ModelDb.Relic<NonoNoBag>());
-
-    //初始遗物
-    public override CardPoolModel CardPool => ModelDb.CardPool<NonoCardPool>();
+	//初始卡牌
+	public override IReadOnlyList<RelicModel> StartingRelics => new _003C_003Ez__ReadOnlySingleElementList<RelicModel>((RelicModel)(object)ModelDb.Relic<NonoNoBag>());
+	//初始遗物
+	public override CardPoolModel CardPool => ModelDb.CardPool<NonoCardPool>();
 	public override RelicPoolModel RelicPool => ModelDb.RelicPool<NonoRelicPool>();
 	public override PotionPoolModel PotionPool => ModelDb.PotionPool<SharedPotionPool>();
 
