@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqjtk7bk4e0ad"
-path="res://.godot/imported/star_cost_icon.png-ead89e92f0413eeb5ed90f3f35d5276c.ctex"
+uid="uid://dr63vs3mmhqyq"
+path="res://.godot/imported/mana_cost_icon.png-76af966b3c27bf3f73360040b89d9382.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nono/Images/Packed/Sprite_Fonts/star_cost_icon.png"
-dest_files=["res://.godot/imported/star_cost_icon.png-ead89e92f0413eeb5ed90f3f35d5276c.ctex"]
+source_file="res://Nono/Images/Packed/Sprite_Fonts/mana_cost_icon.png"
+dest_files=["res://.godot/imported/mana_cost_icon.png-76af966b3c27bf3f73360040b89d9382.ctex"]
 
 [params]
 

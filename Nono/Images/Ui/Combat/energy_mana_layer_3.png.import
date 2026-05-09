@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxsg3r54b1n36"
-path="res://.godot/imported/mana_1.png-2e7c112495720157a369ff715575261a.ctex"
+uid="uid://01glbd44a7e4"
+path="res://.godot/imported/energy_mana_layer_3.png-ee433c5d57c9944cdead1b0aaeeb1b4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nono/VFX/mana_1.png"
-dest_files=["res://.godot/imported/mana_1.png-2e7c112495720157a369ff715575261a.ctex"]
+source_file="res://Nono/Images/Ui/Combat/energy_mana_layer_3.png"
+dest_files=["res://.godot/imported/energy_mana_layer_3.png-ee433c5d57c9944cdead1b0aaeeb1b4b.ctex"]
 
 [params]
 

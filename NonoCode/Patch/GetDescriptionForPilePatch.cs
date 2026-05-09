@@ -33,7 +33,7 @@ public static class GetDescriptionForPilePatch
             return System.Text.RegularExpressions.Regex.Replace(
                 input,
                 @"\[img\]res://images/packed/sprite_fonts/star_icon\.png\[/img\]",
-                "[img]res://Nono/Images/Packed/Sprite_Fonts/star_icon.png[/img]",
+                "[img]res://Nono/Images/Packed/Sprite_Fonts/mana_icon.png[/img]",
                 System.Text.RegularExpressions.RegexOptions.IgnoreCase
             );
         }

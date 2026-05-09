@@ -32,8 +32,9 @@ public class Nono : PlaceholderCharacterModel
 		ModelDb.Card<NonoBlock>(),
 		ModelDb.Card<CatBite>(),*/
 		ModelDb.Card<EmergencyTreatment>(),
+        ModelDb.Card<FireBall>(),
 
-	];
+    ];
 	//初始卡牌
 	public override IReadOnlyList<RelicModel> StartingRelics => new _003C_003Ez__ReadOnlySingleElementList<RelicModel>((RelicModel)(object)ModelDb.Relic<NonoNoBag>());
 	//初始遗物

@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "D:\\Code\\Slay the Spire 2\\object\\Nono\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\patch\\updatestarcostvisualspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\patch\\updatestarcostvisualspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\charaters\\nono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\charaters\\nono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\relics\\nononobag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\relics\\nononobag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nono\\localization\\zhs\\static_hover_tips.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nono\\localization\\zhs\\static_hover_tips.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\patch\\nstarcounterpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\patch\\nstarcounterpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\patch\\getdescriptionforupgradepreviewpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\patch\\getdescriptionforupgradepreviewpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\nonocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\nonocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\patch\\getdescriptionforpilepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\patch\\getdescriptionforpilepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nono\\localization\\zhs\\static_hover_tips.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nono\\localization\\zhs\\static_hover_tips.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\patch\\updatestarcostvisualspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\patch\\updatestarcostvisualspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\--z__readonlylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:--z__readonlylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\nonocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\nonocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +46,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NonoNoBag.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Relics\\NonoNoBag.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Relics\\NonoNoBag.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Relics\\NonoNoBag.cs",
+              "RelativeToolTip": "NonoCode\\Relics\\NonoNoBag.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T16:22:05.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetDescriptionForPilePatch.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
+              "RelativeToolTip": "NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCIAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T17:44:26.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetDescriptionForUpgradePreviewPatch.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
+              "RelativeToolTip": "NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB4AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T08:45:38.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NStarCounterPatch.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\NStarCounterPatch.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Patch\\NStarCounterPatch.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\NStarCounterPatch.cs",
+              "RelativeToolTip": "NonoCode\\Patch\\NStarCounterPatch.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCQAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T12:49:00.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Nono.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Charaters\\Nono.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Charaters\\Nono.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Charaters\\Nono.cs",
+              "RelativeToolTip": "NonoCode\\Charaters\\Nono.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T14:51:49.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateStarCostVisualsPatch.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
+              "RelativeToolTip": "NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBsAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T07:04:11.468Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "static_hover_tips.json",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\static_hover_tips.json",
+              "RelativeDocumentMoniker": "Nono\\localization\\zhs\\static_hover_tips.json",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\static_hover_tips.json",
+              "RelativeToolTip": "Nono\\localization\\zhs\\static_hover_tips.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-29T17:07:14.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "--z__ReadOnlyList.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\--z__ReadOnlyList.cs",
+              "RelativeDocumentMoniker": "--z__ReadOnlyList.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\--z__ReadOnlyList.cs",
+              "RelativeToolTip": "--z__ReadOnlyList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:48:34.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "NonoCard.cs",
               "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\NonoCard.cs",
               "RelativeDocumentMoniker": "NonoCode\\Cards\\NonoCard.cs",
@@ -42,60 +157,7 @@
               "RelativeToolTip": "NonoCode\\Cards\\NonoCard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T10:10:43.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetDescriptionForUpgradePreviewPatch.cs",
-              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
-              "RelativeDocumentMoniker": "NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
-              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
-              "RelativeToolTip": "NonoCode\\Patch\\GetDescriptionForUpgradePreviewPatch.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBEAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T08:45:38.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateStarCostVisualsPatch.cs",
-              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
-              "RelativeDocumentMoniker": "NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
-              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
-              "RelativeToolTip": "NonoCode\\Patch\\UpdateStarCostVisualsPatch.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwBMAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T08:39:18.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "static_hover_tips.json",
-              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\static_hover_tips.json",
-              "RelativeDocumentMoniker": "Nono\\localization\\zhs\\static_hover_tips.json",
-              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\static_hover_tips.json",
-              "RelativeToolTip": "Nono\\localization\\zhs\\static_hover_tips.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-29T17:07:14.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetDescriptionForPilePatch.cs",
-              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "RelativeDocumentMoniker": "NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "RelativeToolTip": "NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T17:44:26.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T10:10:43.406Z"
             }
           ]
         }

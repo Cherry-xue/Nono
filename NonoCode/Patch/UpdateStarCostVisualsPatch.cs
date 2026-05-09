@@ -16,10 +16,16 @@ public static class UpdateStarCostVisualsPatch
         // 在方法执行前修改参数或执行操作
         static void Prefix(NCard __instance)
         {
+            var starIcon = Traverse.Create(__instance).Field("_starIcon").GetValue<TextureRect>();
             if (__instance.Model is NonoCard mycard) { 
                 Log.Info(">>>[NonoMod]--UpdateStarCostVisuals Successful");
-                var starIcon = Traverse.Create(__instance).Field("_starIcon").GetValue<TextureRect>();
-                Texture2D texture = ResourceLoader.Load<Texture2D>("res://Nono/Images/Packed/Sprite_Fonts/star_cost_icon.png");
+                Texture2D texture = ResourceLoader.Load<Texture2D>("res://Nono/Images/Packed/Sprite_Fonts/mana_cost_icon.png");
+                starIcon.Texture = texture;
+            }
+            else
+            {
+                Log.Info(">>>[NonoMod]--UpdateStarCostVisuals Skipped for non-NonoCard");
+                Texture2D texture = ResourceLoader.Load<Texture2D>("res://images/ui/combat/energy_star.png");
                 starIcon.Texture = texture;
             }
         }

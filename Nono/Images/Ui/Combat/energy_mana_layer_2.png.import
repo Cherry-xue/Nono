@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bswrqk2v5p4f0"
-path="res://.godot/imported/star_icon.png-f44abb3428c28d56899ae43cc677e048.ctex"
+uid="uid://c7eenwkepgxax"
+path="res://.godot/imported/energy_mana_layer_2.png-e0920c82ef6fa6aa06ef5f4458c0ee3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nono/Images/Packed/Sprite_Fonts/star_icon.png"
-dest_files=["res://.godot/imported/star_icon.png-f44abb3428c28d56899ae43cc677e048.ctex"]
+source_file="res://Nono/Images/Ui/Combat/energy_mana_layer_2.png"
+dest_files=["res://.godot/imported/energy_mana_layer_2.png-e0920c82ef6fa6aa06ef5f4458c0ee3e.ctex"]
 
 [params]
 
