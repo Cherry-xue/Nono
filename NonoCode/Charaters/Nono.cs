@@ -26,8 +26,8 @@ public class Nono : PlaceholderCharacterModel
 	public override IEnumerable<CardModel> StartingDeck => [
 	/*	ModelDb.Card<NonoAttack>(),
 		ModelDb.Card<NonoAttack>(),
-		ModelDb.Card<NonoBlock>(),
-		ModelDb.Card<CatBite>(),*/
+		ModelDb.Card<NonoBlock>(),*/
+		ModelDb.Card<PotionConflate>(),
 		ModelDb.Card<EmergencyTreatment>(),
         ModelDb.Card<FireBall>(),
         ModelDb.Card<OverflowManaRecycle>(),
