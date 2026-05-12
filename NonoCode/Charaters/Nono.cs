@@ -2,15 +2,12 @@ using BaseLib.Abstracts;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.PotionPools;
-using MegaCrit.Sts2.Core.Models.RelicPools;
-using MoeNegiMod.Nono.Cards;
-using System;
+using Nono.NonoCode.Cards;
 using Nono.NonoCode.Extensions;
-using MoeNegiMod.Nono.Relics;
+using Nono.NonoCode.Relics;
 
-namespace MoeNegiMod.Nono.Character;
+namespace Nono.NonoCode.Charaters;
 
   
 public class Nono : PlaceholderCharacterModel
@@ -33,12 +30,13 @@ public class Nono : PlaceholderCharacterModel
 		ModelDb.Card<CatBite>(),*/
 		ModelDb.Card<EmergencyTreatment>(),
         ModelDb.Card<FireBall>(),
-
+        ModelDb.Card<OverflowManaRecycle>(),
+        ModelDb.Card<CondensingMana>()
     ];
 	//初始卡牌
-	public override IReadOnlyList<RelicModel> StartingRelics => new _003C_003Ez__ReadOnlySingleElementList<RelicModel>((RelicModel)(object)ModelDb.Relic<NonoNoBag>());
-	//初始遗物
-	public override CardPoolModel CardPool => ModelDb.CardPool<NonoCardPool>();
+    public override IReadOnlyList<RelicModel> StartingRelics => [ModelDb.Relic<NonoNoBag>()];
+    //初始遗物
+    public override CardPoolModel CardPool => ModelDb.CardPool<NonoCardPool>();
 	public override RelicPoolModel RelicPool => ModelDb.RelicPool<NonoRelicPool>();
 	public override PotionPoolModel PotionPool => ModelDb.PotionPool<SharedPotionPool>();
 

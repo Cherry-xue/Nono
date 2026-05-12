@@ -1,0 +1,5 @@
+{
+  "NONO-OVERFLOW_MANA_RECYCLE_POWER.description": "每当你打出一张[gold]魔法[/gold]牌时，获得[blue]4[/blue]点[gold]格挡[/gold]。",
+  "NONO-OVERFLOW_MANA_RECYCLE_POWER.smartDescription": "每当你打出一张[gold]魔法[/gold]牌时，获得[blue]{Amount}[/blue]点[gold]格挡[/gold]。",
+  "NONO-OVERFLOW_MANA_RECYCLE_POWER.title": "溢能回收"
+}

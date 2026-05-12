@@ -1,10 +1,9 @@
-using System;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
-using MoeNegiMod.Nono.Cards;
+using Nono.NonoCode.Cards;
 
 [HarmonyPatch]
 public static class GetDescriptionForPilePatch

@@ -1,9 +1,7 @@
 using BaseLib.Abstracts;
 using Godot;
-using MegaCrit.Sts2.Core.Models.Relics;
 using Nono.NonoCode.Extensions;
-using MoeNegiMod.Nono.Character;
-namespace MoeNegiMod.Nono.Character;
+namespace Nono.NonoCode.Charaters;
 
 public class NonoRelicPool : CustomRelicPoolModel
 {

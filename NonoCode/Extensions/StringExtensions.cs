@@ -1,9 +1,5 @@
-
-using MegaCrit.Sts2.Core.Models.Cards;
-
 namespace Nono.NonoCode.Extensions;
 
-//Mostly utilities to get asset paths.
 public static class StringExtensions
 {
 	public static string ImagePath(this string path)

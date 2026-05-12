@@ -1,9 +1,8 @@
 using BaseLib.Abstracts;
 using Godot;
-using MegaCrit.Sts2.Core.Assets;
 using Nono.NonoCode.Extensions;
 
-namespace MoeNegiMod.Nono.Character;
+namespace Nono.NonoCode.Charaters;
 
 public class NonoCardPool : CustomCardPoolModel
 {
@@ -11,7 +10,6 @@ public class NonoCardPool : CustomCardPoolModel
 
     public override string BigEnergyIconPath => "Charui/big_energy.png".ImagePath();
     public override string TextEnergyIconPath => "Charui/text_energy.png".ImagePath();
-    //Color of small card icons
     public override Color DeckEntryCardColor => new("7FFFD4");
     public override Color EnergyOutlineColor => new("#7D7D7D");
     public override Color ShaderColor => new("#00FFEA");

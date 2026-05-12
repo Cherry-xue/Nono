@@ -6,7 +6,6 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Nodes.Combat;
-using MoeNegiMod.Nono.Character;
 
 [HarmonyPatch(typeof(NStarCounter))]
 public static class NStarCounterPatch
@@ -18,7 +17,7 @@ public static class NStarCounterPatch
         await ((GodotObject)__instance).ToSignal((GodotObject)(object)((Node)__instance).GetTree(), SceneTree.SignalName.ProcessFrame);
         object? obj = typeof(NStarCounter).GetField("_player", BindingFlags.Instance | BindingFlags.NonPublic)?.GetValue(__instance);
         Player player = (Player)((obj is Player) ? obj : null);
-        if (((player != null) ? player.Character : null) is MoeNegiMod.Nono.Character.Nono)
+        if (((player != null) ? player.Character : null) is Nono.NonoCode.Charaters.Nono)
         {
             ReplaceHoverTip(__instance);
             ReplaceIcon(__instance);
@@ -27,11 +26,6 @@ public static class NStarCounterPatch
 
     private static void ReplaceHoverTip(NStarCounter instance)
     {
-        //IL_000b: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0011: Expected O, but got Unknown
-        //IL_001b: Unknown result type (might be due to invalid IL or missing references)
-        //IL_0021: Expected O, but got Unknown
-        //IL_005a: Unknown result type (might be due to invalid IL or missing references)
         LocString val = new LocString("static_hover_tips", "MANA_COUNTER.title");
         LocString val2 = new LocString("static_hover_tips", "MANA_COUNTER.description");
         val2.Add("singleManaIcon", "[img]res://Nono/Images/Packed/Sprite_Fonts/mana_icon.png[/img]");

@@ -2,10 +2,10 @@ using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
-using MoeNegiMod.Nono.Character;
+using Nono.NonoCode.Charaters;
 using Nono.NonoCode.Extensions;
 
-namespace MoeNegiMod.Nono.Relics;
+namespace Nono.NonoCode.Relics;
 [Pool(typeof(NonoRelicPool))]
 
 public abstract class NonoRelics : CustomRelicModel

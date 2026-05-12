@@ -3,13 +3,12 @@ using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Logging;
-using MoeNegiMod.Nono.Character;
+using Nono.NonoCode.Charaters;
 using Nono.NonoCode.Extensions;
 
 
-namespace MoeNegiMod.Nono.Cards;
+namespace Nono.NonoCode.Cards;
 
 [Pool(typeof(NonoCardPool))]
 public abstract class NonoCard(int cost, CardType type, CardRarity rarity, TargetType target) :
