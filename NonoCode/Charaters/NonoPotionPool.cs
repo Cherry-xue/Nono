@@ -4,7 +4,7 @@ using Nono.NonoCode.Extensions;
 
 namespace Nono.NonoCode.Charaters;
 
-public class NonoRelicPool : CustomRelicPoolModel
+public class NonoPotionPool : CustomPotionPoolModel
 {
     public override string EnergyColorName => Nono.CharacterId;
     public override Color LabOutlineColor => Nono.Color;

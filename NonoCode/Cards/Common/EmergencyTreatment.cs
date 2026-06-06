@@ -4,12 +4,12 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
-namespace Nono.NonoCode.Cards;
+namespace Nono.NonoCode.Cards.Common;
 
 
 public class EmergencyTreatment() : NonoCard
-    (1,CardType.Skill, CardRarity.Basic,TargetType.Self)
-    //定义卡牌基本属性：1能量，技能，基础稀有度，目标为自己
+    (0,CardType.Skill, CardRarity.Common,TargetType.Self)
+    //定义卡牌基本属性：0能量，技能，普通稀有度，目标为自己
 {
     public override List<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     //卡牌关键词：消耗
@@ -23,7 +23,6 @@ public class EmergencyTreatment() : NonoCard
     protected override void OnUpgrade()
     {
         DynamicVars.Heal.UpgradeValueBy(2m);
-        ((CardModel)this).EnergyCost.UpgradeBy(-1);
     }
-    //升级效果：回复数值增加2，能量消耗减少1
+    //升级效果：回复数值增加2
 }

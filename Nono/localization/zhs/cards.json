@@ -18,5 +18,11 @@
   "NONO-OVERFLOW_MANA_RECYCLE.description": "每当你打出一张[gold]魔法[/gold]牌时，获得{BlockOnMana:diff()}点[gold]格挡[/gold]。",
   "NONO-OVERFLOW_MANA_RECYCLE.title": "溢能回收",
   "NONO-POTION_CONFLATE.description": "",
-  "NONO-POTION_CONFLATE.title": "药水合成"
+  "NONO-POTION_CONFLATE.title": "药水合成",
+  "NONO-PEACHOF_WISDOM.description": "抽牌直到你抽到一张非[gold]魔法[/gold]牌。",
+  "NONO-PEACHOF_WISDOM.title": "智慧之桃",
+  "NONO-REFINING_STONES.description": "造成{Damage:diff()}点伤害。\n获得一瓶[gold]药水形状的{IfUpgraded:show:黑曜石|石头}[/gold]。",
+  "NONO-REFINING_STONES.title": "炼制石头",
+  "NONO-EXPLOSION.description": "消耗所有{singleStarIcon}，造成{ExplosionDamage:diff()}*X点伤害。\n本卡牌享受{PowerMultiple:diff()}倍力量加成。\n给予自己2层[gold]虚弱[/gold]",
+  "NONO-EXPLOSION.title": "爆裂"
 }

@@ -44,4 +44,8 @@ public static class StringExtensions
 	{
 		return Path.Join(MainFile.ModId, "Scenes", path);
 	}
+	public static string PotionImagePath(this string path)
+	{
+		return Path.Join(MainFile.ModId, "Images", "Potions", path);
+	}
 }

@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.PotionPools;
 using Nono.NonoCode.Cards;
+using Nono.NonoCode.Cards.Common;
 using Nono.NonoCode.Extensions;
 using Nono.NonoCode.Relics;
 
@@ -24,12 +25,12 @@ public class Nono : PlaceholderCharacterModel
 	public override bool ShouldAlwaysShowStarCounter => true;
 	//始终显示星辉计数器。
 	public override IEnumerable<CardModel> StartingDeck => [
-	/*	ModelDb.Card<NonoAttack>(),
 		ModelDb.Card<NonoAttack>(),
-		ModelDb.Card<NonoBlock>(),*/
+		ModelDb.Card<NonoAttack>(),
+		ModelDb.Card<NonoBlock>(),
 		ModelDb.Card<PotionConflate>(),
-		ModelDb.Card<EmergencyTreatment>(),
-        ModelDb.Card<FireBall>(),
+        ModelDb.Card<Explosion>(),
+        ModelDb.Card<PeachofWisdom>(),
         ModelDb.Card<OverflowManaRecycle>(),
         ModelDb.Card<CondensingMana>()
     ];
@@ -38,7 +39,7 @@ public class Nono : PlaceholderCharacterModel
     //初始遗物
     public override CardPoolModel CardPool => ModelDb.CardPool<NonoCardPool>();
 	public override RelicPoolModel RelicPool => ModelDb.RelicPool<NonoRelicPool>();
-	public override PotionPoolModel PotionPool => ModelDb.PotionPool<SharedPotionPool>();
+	public override PotionPoolModel PotionPool => ModelDb.PotionPool<NonoPotionPool>();
 
 	/*  PlaceholderCharacterModel will utilize placeholder basegame assets for most of your character assets until you
 		override all the other methods that define those assets.

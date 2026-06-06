@@ -24,11 +24,11 @@ public class OverflowManaRecycle() : NonoCard
     {
         await PowerCmd.Apply<OverflowManaRecyclePower>(base.Owner.Creature, base.DynamicVars["BlockOnMana"].BaseValue, base.Owner.Creature, this);
     }
-    //卡牌效果：施加等同于DynamicVars.Weak数值的弱化，施加等同于DynamicVars.Vulnerable数值的易伤
+    //卡牌效果:获得一个OverflowManaRecyclePower，效果为：每当使用一张魔法卡时，获得等同于DynamicVars["BlockOnMana"]数值的格挡
     protected override void OnUpgrade()
     {
 
         base.DynamicVars["BlockOnMana"].UpgradeValueBy(1m);
     }
-    //升级效果：弱化和易伤数值均增加1
+    //升级效果:使用魔法卡获得的格挡数值增加1
 }

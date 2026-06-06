@@ -4,7 +4,6 @@ using BaseLib.Utils;
 using Godot;
 using Nono.NonoCode.Charaters;
 using Nono.NonoCode.Extensions;
-
 namespace Nono.NonoCode.Relics;
 [Pool(typeof(NonoRelicPool))]
 

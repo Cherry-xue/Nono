@@ -40,7 +40,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="NonoCode\Cards\Rare\" />
     <Folder Include="NonoCode\Cards\Ancient\" />
     <Folder Include="NonoCode\Nodes\" />
     <Folder Include="Nono\Images\Packed\Sprite_Fonts\" />
