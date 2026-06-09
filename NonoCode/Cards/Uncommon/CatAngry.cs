@@ -8,7 +8,8 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace Nono.NonoCode.Cards;
 
 public class CatAngry() : NonoCard
-    (0, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)//定义卡牌基本属性：0能量，技能，罕见稀有度，目标为任意敌人
+    (0, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy)
+    //定义卡牌基本属性：0能量，技能，罕见稀有度，目标为任意敌人
 {
     public override List<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     //卡牌关键词：消耗

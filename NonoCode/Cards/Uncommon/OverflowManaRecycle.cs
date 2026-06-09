@@ -17,7 +17,7 @@ public class OverflowManaRecycle() : NonoCard
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromKeyword(NonoKeywords.MagicCard),
-        HoverTipFactory.Static(StaticHoverTip.Block)
+        HoverTipFactory.Static(StaticHoverTip.Block),
     ];
     //定义魔法和格挡效果的提示
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

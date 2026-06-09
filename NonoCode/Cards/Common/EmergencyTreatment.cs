@@ -17,7 +17,7 @@ public class EmergencyTreatment() : NonoCard
     //定义可变参数：回复数值，初始值为4
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await CreatureCmd.Heal(Owner.Creature,((DynamicVar)((CardModel)this).DynamicVars.Heal).BaseValue, true);
+        await CreatureCmd.Heal(Owner.Creature,base.DynamicVars.Heal.BaseValue, true);
     }
     //卡牌效果：回复玩家生命，回复数值等同于DynamicVars.Heal的数值
     protected override void OnUpgrade()

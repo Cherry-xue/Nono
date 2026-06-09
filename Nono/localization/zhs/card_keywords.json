@@ -1,4 +1,6 @@
 {
   "NONO-MAGICCARD.description": "拥有此词条的卡牌为魔法牌",
-  "NONO-MAGICCARD.title": "魔法"
+  "NONO-MAGICCARD.title": "魔法",
+  "NONO-POTIONMAKING.description": "拥有此词条的卡牌可以制作药水",
+  "NONO-POTIONMAKING.title": "药水制作"
 }
