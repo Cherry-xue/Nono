@@ -12,7 +12,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Nono.NonoCode.Power;
 
-public sealed class PreBurningPower : NonoPower
+public sealed class VolcanoPower : NonoPower
 {
     public override PowerType Type => PowerType.Buff;
     //定义能力类型：增益
@@ -22,10 +22,9 @@ public sealed class PreBurningPower : NonoPower
     //显示BurnPower的相关信息
     public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature? dealer, DamageResult result, ValueProp props, Creature target, CardModel? cardSource)
     {
-        if (dealer != null && dealer == base.Owner && props.IsPoweredAttack() /*&& cardSource.Keywords.Contains(NonoKeywords.MagicCard)*/)
+        if (dealer != null && dealer == base.Owner && props.IsPoweredAttack() && cardSource.Keywords.Contains(NonoKeywords.VolcanoKeywords))
         {
             await PowerCmd.Apply<BurnPower>(target, base.Amount, base.Owner, null);
-            await PowerCmd.Remove<PreBurningPower>(base.Owner);
         }
     }
     //造成伤害时,施加等同PreBurningPower层数的BurnPower,随后移除全部PreBurningPower

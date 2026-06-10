@@ -5,7 +5,13 @@
   "NONO-BURN_POWER.description": "灼烧的生物会在自身回合开始时失去生命。灼烧层数每回合减少[blue]一半[/blue]。",
   "NONO-BURN_POWER.smartDescription": "在{OnPlayer:你的回合|其回合}开始时失去[blue]{RealDamage:diff()}[/blue]点生命，然后将[gold]灼烧[/gold]层数减少[blue]一半[/blue]。",
   "NONO-BURN_POWER.title": "灼烧",
-  "NONO-PRE_BURNING_POWER.description": "拥有[gold]预燃[/gold]时,攻击会消耗所有[gold]预燃[/gold]层数,施加等同于[gold]预燃[/gold]层数的[gold]灼烧[/gold]",
-  "NONO-PRE_BURNING_POWER.smartDescription": "攻击时,消耗所有[gold]预燃[/gold]层数,施加[blue]{Amount}[/blue]层[gold]灼烧[/gold]",
-  "NONO-PRE_BURNING_POWER.title": "预燃"
+  "NONO-PRE_BURNING_POWER.description": "击中首个敌人时,消耗所有[gold]预燃[/gold]层数,施加等同于[gold]预燃[/gold]层数的[gold]灼烧[/gold]。",
+  "NONO-PRE_BURNING_POWER.smartDescription": "击中首个敌人时,消耗所有[gold]预燃[/gold]层数,施加[blue]{Amount}[/blue]层[gold]灼烧[/gold]。",
+  "NONO-PRE_BURNING_POWER.title": "预燃",
+  "NONO-FLAMMABLE_POINT_POWER.description": "回合开始时,获得[blue]2[/blue]层[gold]预燃[/gold]。",
+  "NONO-FLAMMABLE_POINT_POWER.smartDescription": "回合开始时,获得[blue]{Amount}[/blue]层[gold]预燃[/gold]。",
+  "NONO-FLAMMABLE_POINT_POWER.title": "可燃点",
+  "NONO-VOLCANO_POWER.description": "过来的都得死。",
+  "NONO-VOLCANO_POWER.smartDescription": "过来的都得死。",
+  "NONO-VOLCANO_POWER.title": "火山"
 }

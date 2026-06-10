@@ -11,7 +11,7 @@
   "NONO-EMERGENCY_TREATMENT.title": "应急治疗",
   "NONO-POTION_PRODUCTION.description": "制作一瓶普通药水,{singleStarIcon}未实现。",
   "NONO-POTION_PRODUCTION.title": "药水制作",
-  "NONO-CAT_ANGRY.description": "给予{WeakPower:diff()}层[gold]虚弱[/gold]。\n给予{VulnerablePower:diff()}层[gold]易伤[/gold]。",
+  "NONO-CAT_ANGRY.description": "给予{WeakPower:diff()}点[gold]虚弱[/gold]。\n给予{VulnerablePower:diff()}点[gold]易伤[/gold]。",
   "NONO-CAT_ANGRY.title": "哈气",
   "NONO-CONDENSING_MANA.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n获得{singleStarIcon}。",
   "NONO-CONDENSING_MANA.title": "凝聚魔力",
@@ -31,6 +31,14 @@
   "NONO-STRONG_CORROSIVE_AGENT.title": "强效腐蚀剂",
   "NONO-FIRE_WOOD.description": "获得{FireWood:diff()}点[gold]预燃[/gold]。",
   "NONO-FIRE_WOOD.title": "柴薪",
-  "NONO-BURN_OUT.description": "[gold]消耗[/gold]所有[gold]预燃[/gold]。\n每点[gold]预燃[/gold]对所有敌人造成{Damage:diff()}点伤害。",
-  "NONO-BURN_OUT.title": "燃尽"
+  "NONO-BURN_OUT.description": "[gold]消耗[/gold]所有[gold]预燃[/gold]。\n每层[gold]预燃[/gold]对所有敌人造成{Damage:diff()}点伤害。",
+  "NONO-BURN_OUT.title": "燃尽",
+  "NONO-FLAMMABLE_POINT.description": "在回合开始时，获得{FlammablePoint:diff()}层[gold]预燃[/gold]。",
+  "NONO-FLAMMABLE_POINT.title": "可燃点",
+  "NONO-IGNITE.description": "造成{Damage:diff()}点伤害，并给予{Burn:diff()}层[gold]灼烧[/gold]。",
+  "NONO-IGNITE.title": "点燃",
+  "NONO-VOLCANO.description": "随机对敌人造成{Damage:diff()}点伤害并给予{Burn:diff()}层[gold]灼烧[/gold]X次",
+  "NONO-VOLCANO.title": "火山",
+  "NONO-FLAME_ARROW.description": "造成{Damage:diff()}点伤害",
+  "NONO-FLAME_ARROW.title": "火焰箭"
 }

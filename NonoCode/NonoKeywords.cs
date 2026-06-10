@@ -5,15 +5,18 @@ namespace Nono.NonoCode;
 
 public class NonoKeywords
 {
-    // 自定义枚举的名字。最终会变成{前缀}-{枚举值大写}的形式
+    //魔法牌
     [CustomEnum("MagicCard")]
     // 放在原版卡牌描述的位置，这里是卡牌描述的前面
     [KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword MagicCard;
-
+    //药水制作
     [CustomEnum("PotionMaking")]
     [KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword PotionMaking;
-
+    //火山
+    [CustomEnum("VolcanoKeywords")]
+    [KeywordProperties(AutoKeywordPosition.Before)]
+    public static CardKeyword VolcanoKeywords;
 
 }
