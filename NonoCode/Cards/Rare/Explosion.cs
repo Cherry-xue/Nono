@@ -37,7 +37,7 @@ public class Explosion() : NonoCard
         int stars = Owner.PlayerCombatState.Stars;
         decimal explosiondamage = ((DynamicVar)((CardModel)this).DynamicVars["ExplosionDamage"]).BaseValue * stars + (decimal)((CardModel)this).Owner.Creature.GetPowerAmount<StrengthPower>() * ((DynamicVar)((CardModel)this).DynamicVars["PowerMultiple"]).BaseValue;
         await DamageCmd.Attack(explosiondamage).FromCard(this).TargetingAllOpponents(base.CombatState).Execute(choiceContext);
-        await PowerCmd.Apply<WeakPower>(base.Owner.Creature, 2, base.Owner.Creature, this);
+        await PowerCmd.Apply<WeakPower>(choiceContext, base.Owner.Creature, 2, base.Owner.Creature, this);
         await PlayerCmd.SetStars(0, base.Owner);
     }
     //卡牌效果:对所有敌人造成伤害，伤害数值等于DynamicVars.ExplosionDamage的数值乘以玩家当前的魔力,增加力量数值乘以DynamicVars.PowerMultiple的数值,之后施加2点弱化，并将玩家的魔力重置为0

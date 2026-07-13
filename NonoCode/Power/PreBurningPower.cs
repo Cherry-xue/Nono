@@ -24,7 +24,7 @@ public sealed class PreBurningPower : NonoPower
     {
         if (dealer != null && dealer == base.Owner && props.IsPoweredAttack() /*&& cardSource.Keywords.Contains(NonoKeywords.MagicCard)*/)
         {
-            await PowerCmd.Apply<BurnPower>(target, base.Amount, base.Owner, null);
+            await PowerCmd.Apply<BurnPower>(choiceContext, target, base.Amount, base.Owner, null);
             await PowerCmd.Remove<PreBurningPower>(base.Owner);
         }
     }

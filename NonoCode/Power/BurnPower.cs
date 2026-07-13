@@ -38,10 +38,10 @@ public sealed class BurnPower : NonoPower
         };
     }
     //定义血条预测：根据能力数值预测即将受到的伤害，颜色为橙色
-    public override Task AfterPowerAmountChanged(PowerModel power, decimal amount, Creature applier, CardModel cardSource)
+    public override Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, decimal amount, Creature? applier, CardModel? cardSource)
     {
         SetDamage();
-        return base.AfterPowerAmountChanged(power, amount, applier, cardSource);
+        return base.AfterPowerAmountChanged(choiceContext, power, amount, applier, cardSource);
     }
     //在能力数值改变后调用SetDamage方法来更新伤害数值
     public int CalculateTotalDamageNextTurn()
@@ -58,7 +58,7 @@ public sealed class BurnPower : NonoPower
         return (int)num;
     }
     //定义一个方法来计算下回合即将受到的总伤害，考虑到能力数值的递减和可能的伤害修改
-    public override async Task AfterSideTurnStart(CombatSide side, CombatState combatState)
+    public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
         if (side != base.Owner.Side)
         {
@@ -68,8 +68,8 @@ public sealed class BurnPower : NonoPower
         await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), base.Owner, Amount * 2, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
         if (base.Owner.IsAlive)
         {
-            decimal cost = Math.Max(Amount / 2, 2m) * -1m;
-            await PowerCmd.ModifyAmount(this, cost, null, null, false);
+            decimal cost = Math.Max(Amount / 2, 1m) * -1m;
+            await PowerCmd.ModifyAmount(new ThrowingPlayerChoiceContext(), this, cost, null, null, false);
         }
         else
         {

@@ -35,9 +35,9 @@
   "NONO-BURN_OUT.title": "燃尽",
   "NONO-FLAMMABLE_POINT.description": "在回合开始时，获得{FlammablePoint:diff()}层[gold]预燃[/gold]。",
   "NONO-FLAMMABLE_POINT.title": "可燃点",
-  "NONO-IGNITE.description": "造成{Damage:diff()}点伤害，并给予{Burn:diff()}层[gold]灼烧[/gold]。",
+  "NONO-IGNITE.description": "造成{Damage:diff()}点伤害，并给予{Burn:diff()}层[gold]燃烧[/gold]。",
   "NONO-IGNITE.title": "点燃",
-  "NONO-VOLCANO.description": "随机对敌人造成{Damage:diff()}点伤害并给予{Burn:diff()}层[gold]灼烧[/gold]X次",
+  "NONO-VOLCANO.description": "随机对敌人造成{Damage:diff()}点伤害并给予{Burn:diff()}层[gold]燃烧[/gold]X次",
   "NONO-VOLCANO.title": "火山",
   "NONO-FLAME_ARROW.description": "造成{Damage:diff()}点伤害",
   "NONO-FLAME_ARROW.title": "火焰箭"

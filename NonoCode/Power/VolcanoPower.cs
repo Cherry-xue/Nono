@@ -24,7 +24,7 @@ public sealed class VolcanoPower : NonoPower
     {
         if (dealer != null && dealer == base.Owner && props.IsPoweredAttack() && cardSource.Keywords.Contains(NonoKeywords.VolcanoKeywords))
         {
-            await PowerCmd.Apply<BurnPower>(target, base.Amount, base.Owner, null);
+            await PowerCmd.Apply<BurnPower>(choiceContext, target, base.Amount, base.Owner, null);
         }
     }
     //造成伤害时,施加等同PreBurningPower层数的BurnPower,随后移除全部PreBurningPower

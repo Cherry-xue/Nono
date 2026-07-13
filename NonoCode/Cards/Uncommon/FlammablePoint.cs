@@ -22,7 +22,7 @@ public class FlammablePoint() : NonoCard
     //显示PreBurningPower的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<FlammablePointPower>(base.Owner.Creature, base.DynamicVars["FlammablePoint"].BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<FlammablePointPower>(choiceContext, base.Owner.Creature, base.DynamicVars["FlammablePoint"].BaseValue, base.Owner.Creature, this);
     }
     //卡牌效果:获得一个FlammablePointPower，效果为:回合开始时,获得等同于FlammablePoint数值的PreBurningPower
     protected override void OnUpgrade()

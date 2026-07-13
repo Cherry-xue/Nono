@@ -15,7 +15,7 @@ public class PotionConflate() : NonoCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        for (int i = 0; i < ((CardModel)this).DynamicVars["ConflateCount"].IntValue; i++)
+        for (int i = 0; i < DynamicVars["ConflateCount"].IntValue; i++)
         {
             await PotionConflateService.TryCraft(recipe: PotionConflateService.FindFirstCraftableRecipe(((CardModel)this).Owner.PotionSlots), owner: ((CardModel)this).Owner, potionSlots: ((CardModel)this).Owner.PotionSlots);
         }

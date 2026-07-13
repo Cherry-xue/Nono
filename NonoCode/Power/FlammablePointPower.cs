@@ -1,6 +1,8 @@
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using Nono.NonoCode.Powers;
 
@@ -17,13 +19,12 @@ public sealed class FlammablePointPower : NonoPower
         HoverTipFactory.FromPower<PreBurningPower>(),
     ];
     //显示PreBurningPower的相关信息
-    public override async Task AfterSideTurnStart(CombatSide side, CombatState combatState)
+    public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
-        if (side != base.Owner.Side)
+        if (participants.Contains(base.Owner))
         {
-            return;
+            await PowerCmd.Apply<PreBurningPower>(new ThrowingPlayerChoiceContext(), base.Owner, base.Amount, base.Owner, null);
         }
-        await PowerCmd.Apply<PreBurningPower>(base.Owner, base.Amount, base.Owner, null);
     }
     //在回合开始时,施加等同FlammablePointPower层数的PreBurningPower
 }

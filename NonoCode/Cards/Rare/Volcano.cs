@@ -28,7 +28,7 @@ public class Volcano() : NonoCard
     //定义可变参数：伤害数值，初始值为5,灼烧数值，初始值为3
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<VolcanoPower>(base.Owner.Creature, base.DynamicVars["Burn"].BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<VolcanoPower>(choiceContext, base.Owner.Creature, base.DynamicVars["Burn"].BaseValue, base.Owner.Creature, this);
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(ResolveStarXValue()).FromCard(this).TargetingRandomOpponents(base.CombatState).Execute(choiceContext);
         await PowerCmd.Remove<VolcanoPower>(base.Owner.Creature);
     }

@@ -22,7 +22,7 @@ public class OverflowManaRecycle() : NonoCard
     //定义魔法和格挡效果的提示
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<OverflowManaRecyclePower>(base.Owner.Creature, base.DynamicVars["BlockOnMana"].BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<OverflowManaRecyclePower>(choiceContext, base.Owner.Creature, base.DynamicVars["BlockOnMana"].BaseValue, base.Owner.Creature, this);
     }
     //卡牌效果:获得一个OverflowManaRecyclePower，效果为：每当使用一张魔法卡时，获得等同于DynamicVars["BlockOnMana"]数值的格挡
     protected override void OnUpgrade()

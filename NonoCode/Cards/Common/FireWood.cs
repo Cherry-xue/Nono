@@ -20,7 +20,7 @@ public class FireWood() : NonoCard
     //定义提示：提示PreBurningPower的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<PreBurningPower>(base.Owner.Creature, base.DynamicVars["FireWood"].BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<PreBurningPower>(choiceContext, base.Owner.Creature, base.DynamicVars["FireWood"].BaseValue, base.Owner.Creature, this);
     }
     //卡牌效果:获得PreBurningPower效果,层数等同于DynamicVars["FireWood"]数值.
     protected override void OnUpgrade()

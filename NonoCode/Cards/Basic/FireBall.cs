@@ -11,7 +11,7 @@ public class FireBall() : NonoCard
     //定义卡牌基本属性：0能量，攻击，基础稀有度，目标为任意敌人
 {
     public override int CanonicalStarCost => 1;
-    //定义星辉消耗为1
+    //定义辉星消耗为1
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
     //定义可变参数：伤害数值，初始值为6
     public override IEnumerable<CardKeyword> CanonicalKeywords => [NonoKeywords.MagicCard];
