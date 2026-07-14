@@ -1,14 +1,9 @@
-using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Logging;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
-using MegaCrit.Sts2.Core.ValueProps;
 namespace Nono.NonoCode.Cards;
 
 
@@ -35,17 +30,17 @@ public class Explosion() : NonoCard
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         int stars = Owner.PlayerCombatState.Stars;
-        decimal explosiondamage = ((DynamicVar)((CardModel)this).DynamicVars["ExplosionDamage"]).BaseValue * stars + (decimal)((CardModel)this).Owner.Creature.GetPowerAmount<StrengthPower>() * ((DynamicVar)((CardModel)this).DynamicVars["PowerMultiple"]).BaseValue;
-        await DamageCmd.Attack(explosiondamage).FromCard(this).TargetingAllOpponents(base.CombatState).Execute(choiceContext);
-        await PowerCmd.Apply<WeakPower>(choiceContext, base.Owner.Creature, 2, base.Owner.Creature, this);
-        await PlayerCmd.SetStars(0, base.Owner);
+        decimal explosiondamage = DynamicVars["ExplosionDamage"].BaseValue * stars + Owner.Creature.GetPowerAmount<StrengthPower>() * DynamicVars["PowerMultiple"].BaseValue;
+        await DamageCmd.Attack(explosiondamage).FromCard(this).TargetingAllOpponents(CombatState).Execute(choiceContext);
+        await PowerCmd.Apply<WeakPower>(choiceContext, Owner.Creature, 2, Owner.Creature, this);
+        await PlayerCmd.SetStars(0, Owner);
     }
     //卡牌效果:对所有敌人造成伤害，伤害数值等于DynamicVars.ExplosionDamage的数值乘以玩家当前的魔力,增加力量数值乘以DynamicVars.PowerMultiple的数值,之后施加2点弱化，并将玩家的魔力重置为0
     protected override void OnUpgrade()
     {
-        base.DynamicVars["ExplosionDamage"].UpgradeValueBy(3m);
-        base.DynamicVars["PowerMultiple"].UpgradeValueBy(2m);
-        ((CardModel)this).EnergyCost.UpgradeBy(-1);
+        DynamicVars["ExplosionDamage"].UpgradeValueBy(3m);
+        DynamicVars["PowerMultiple"].UpgradeValueBy(2m);
+        EnergyCost.UpgradeBy(-1);
     }
     //升级效果：伤害数值增加5，力量加成增加2，能量消耗减少1
 }

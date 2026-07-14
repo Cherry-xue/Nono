@@ -5,7 +5,7 @@
   "NONO-NONO_BLOCK.title": "防御",
   "NONO-CAT_BITE.description": "造成{Damage:diff()}点伤害。",
   "NONO-CAT_BITE.title": "猫咬",
-  "NONO-FIRE_BALL.description": "造成{Damage:diff()}点伤害。",
+  "NONO-FIRE_BALL.description": "造成{Damage:diff()}点伤害,并给予{Burn:diff()}层[gold]燃烧[/gold]。",
   "NONO-FIRE_BALL.title": "火球术",
   "NONO-EMERGENCY_TREATMENT.description": "回复自身{Heal:diff()}点生命。",
   "NONO-EMERGENCY_TREATMENT.title": "应急治疗",
@@ -35,10 +35,12 @@
   "NONO-BURN_OUT.title": "燃尽",
   "NONO-FLAMMABLE_POINT.description": "在回合开始时，获得{FlammablePoint:diff()}层[gold]预燃[/gold]。",
   "NONO-FLAMMABLE_POINT.title": "可燃点",
-  "NONO-IGNITE.description": "造成{Damage:diff()}点伤害，并给予{Burn:diff()}层[gold]燃烧[/gold]。",
+  "NONO-IGNITE.description": "给予{Burn:diff()}层[gold]燃烧[/gold]。",
   "NONO-IGNITE.title": "点燃",
   "NONO-VOLCANO.description": "随机对敌人造成{Damage:diff()}点伤害并给予{Burn:diff()}层[gold]燃烧[/gold]X次",
   "NONO-VOLCANO.title": "火山",
   "NONO-FLAME_ARROW.description": "造成{Damage:diff()}点伤害",
-  "NONO-FLAME_ARROW.title": "火焰箭"
+  "NONO-FLAME_ARROW.title": "火焰箭",
+  "NONO-WALL_OF_FIRE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n你在这个回合每受到一次攻击，都会对攻击者施加{WallOfFire:diff()}层燃烧。",
+  "NONO-WALL_OF_FIRE.title": "火墙术"
 }

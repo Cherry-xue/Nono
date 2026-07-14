@@ -1,14 +1,11 @@
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.ValueProps;
 using Nono.NonoCode.Powers;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Nono.NonoCode.Power;
 
@@ -27,5 +24,5 @@ public sealed class VolcanoPower : NonoPower
             await PowerCmd.Apply<BurnPower>(choiceContext, target, base.Amount, base.Owner, null);
         }
     }
-    //造成伤害时,施加等同PreBurningPower层数的BurnPower,随后移除全部PreBurningPower
+    //造成伤害时,施加等同VolcanoPower层数的BurnPower
 }

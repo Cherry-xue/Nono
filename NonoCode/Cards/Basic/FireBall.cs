@@ -12,7 +12,10 @@ public class FireBall() : NonoCard
 {
     public override int CanonicalStarCost => 1;
     //定义辉星消耗为1
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new DamageVar(4, ValueProp.Move),
+        new DynamicVar("Burn", 2m)
+    ];
     //定义可变参数：伤害数值，初始值为6
     public override IEnumerable<CardKeyword> CanonicalKeywords => [NonoKeywords.MagicCard];
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -23,6 +26,7 @@ public class FireBall() : NonoCard
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(2m);
+        DynamicVars["Burn"].UpgradeValueBy(1m);
     }
     //升级效果：伤害数值增加2
 }

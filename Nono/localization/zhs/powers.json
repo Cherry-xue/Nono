@@ -13,5 +13,8 @@
   "NONO-FLAMMABLE_POINT_POWER.title": "可燃点",
   "NONO-VOLCANO_POWER.description": "过来的都得死。",
   "NONO-VOLCANO_POWER.smartDescription": "过来的都得死。",
-  "NONO-VOLCANO_POWER.title": "火山"
+  "NONO-VOLCANO_POWER.title": "火山",
+  "NONO-WALL_OF_FIRE_POWER.description": "本回合你每次受到攻击时，反击施加[blue]3[/blue]层燃烧。",
+  "NONO-WALL_OF_FIRE_POWER.smartDescription": "本回合你每次受到攻击时，反击施加[blue]{Amount}[/blue]层燃烧。",
+  "NONO-WALL_OF_FIRE_POWER.title": "火墙术"
 }

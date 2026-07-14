@@ -1,4 +1,12 @@
 {
   "NONO-POTION_SHAPED_OBSIDIAN.description": "造成[blue]{Damage}[/blue]点伤害。",
-  "NONO-POTION_SHAPED_OBSIDIAN.title": "药水形状的黑曜石"
+  "NONO-POTION_SHAPED_OBSIDIAN.title": "药水形状的黑曜石",
+  "NONO-LESSER_MANA_POTION.description": "获得{singleManaIcon}",
+  "NONO-LESSER_MANA_POTION.title": "弱效魔力药水",
+  "NONO-MANA_POTION.description": "获得{singleManaIcon}{singleManaIcon}",
+  "NONO-MANA_POTION.title": "魔力药水",
+  "NONO-GREATER_MANA_POTION.description": "获得{singleManaIcon}{singleManaIcon}{singleManaIcon}{singleManaIcon}{singleManaIcon}",
+  "NONO-GREATER_MANA_POTION.title": "强效魔力药水",
+  "NONO-SUPER_MANA_POTION.description": "获得12{singleManaIcon}",
+  "NONO-SUPER_MANA_POTION.title": "超级魔力药水"
 }
