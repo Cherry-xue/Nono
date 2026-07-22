@@ -3,7 +3,6 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using Nono.NonoCode.Power;
 using Nono.NonoCode.Powers;
 
 namespace Nono.NonoCode.Cards;

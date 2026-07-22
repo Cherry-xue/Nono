@@ -4,9 +4,8 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using Nono.NonoCode.Powers;
 
-namespace Nono.NonoCode.Power;
+namespace Nono.NonoCode.Powers;
 
 public sealed class FlammablePointPower : NonoPower
 {

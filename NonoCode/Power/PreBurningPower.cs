@@ -5,9 +5,8 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using Nono.NonoCode.Powers;
 
-namespace Nono.NonoCode.Power;
+namespace Nono.NonoCode.Powers;
 
 public sealed class PreBurningPower : NonoPower
 {

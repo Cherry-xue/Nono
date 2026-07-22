@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using Nono.NonoCode.Power;
+using Nono.NonoCode.Powers;
 
 namespace Nono.NonoCode.Cards;
 
@@ -20,13 +20,13 @@ public class FireWood() : NonoCard
     //定义提示：提示PreBurningPower的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<PreBurningPower>(choiceContext, base.Owner.Creature, base.DynamicVars["FireWood"].BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<PreBurningPower>(choiceContext, Owner.Creature, DynamicVars["FireWood"].BaseValue, Owner.Creature, this);
     }
     //卡牌效果:获得PreBurningPower效果,层数等同于DynamicVars["FireWood"]数值.
     protected override void OnUpgrade()
     {
 
-        base.DynamicVars["FireWood"].UpgradeValueBy(2m);
+        DynamicVars["FireWood"].UpgradeValueBy(2m);
     }
     //升级效果:FireWood数值增加2
 }

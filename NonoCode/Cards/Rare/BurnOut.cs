@@ -4,7 +4,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
-using Nono.NonoCode.Power;
+using Nono.NonoCode.Powers;
 
 namespace Nono.NonoCode.Cards.Rare;
 
@@ -12,7 +12,7 @@ public class BurnOut() : NonoCard
     (1, CardType.Attack, CardRarity.Rare, TargetType.AllEnemies)
     //定义卡牌基本属性：1能量，攻击，罕见稀有度，目标为所有敌人
 {
-    public override int CanonicalStarCost => 2;
+    public override int CanonicalStarCost => 1;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5, ValueProp.Move)];
     //定义可变参数：伤害数值，初始值为5
     public override IEnumerable<CardKeyword> CanonicalKeywords => [NonoKeywords.MagicCard];
@@ -24,11 +24,11 @@ public class BurnOut() : NonoCard
     //定义提示:提示PreBurningPower的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        int amount = Owner.Creature.GetPowerAmount<PreBurningPower>();
+        int amount = Owner.Creature.GetPowerAmount<PreBurningPower>() + 2;
         await PowerCmd.Remove<PreBurningPower>(Owner.Creature);
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue).WithHitCount(amount).FromCard(this).TargetingAllOpponents(CombatState).Execute(choiceContext);
     }
-    //卡牌效果:对所有敌人造成伤害,伤害数值等同于DynamicVars.Damage数值,攻击次数等同于PreBurningPower的层数,并移除PreBurningPower
+    //卡牌效果:对所有敌人造成伤害,伤害数值等同于DynamicVars.Damage数值,攻击次数等同于PreBurningPower的层数+2,并移除PreBurningPower
     protected override void OnUpgrade()
     {
         EnergyCost.UpgradeBy(-1);

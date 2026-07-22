@@ -9,7 +9,7 @@ namespace Nono.NonoCode.Cards;
 
 
 public class Explosion() : NonoCard
-    (3,CardType.Attack, CardRarity.Rare,TargetType.AllEnemies)
+    (2,CardType.Attack, CardRarity.Rare,TargetType.AllEnemies)
     //定义卡牌基本属性：3能量，攻击，稀有稀有度，目标为所有敌人
 {
 

@@ -22,7 +22,7 @@ public class StrongCorrosiveAgent() : NonoCard
         HoverTipFactory.FromPower<ArtifactPower>(),
         HoverTipFactory.Static(StaticHoverTip.Block)
     ];
-    //定义提示：提示内容为PotionShapedRock和PotionShapedObsidian的相关信息
+    //定义提示：提示内容为ArtifactPower和Block的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CreatureCmd.LoseBlock(cardPlay.Target, cardPlay.Target.Block);

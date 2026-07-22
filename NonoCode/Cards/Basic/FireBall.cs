@@ -1,8 +1,10 @@
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
+using Nono.NonoCode.Powers;
 
 namespace Nono.NonoCode.Cards;
 
@@ -21,6 +23,7 @@ public class FireBall() : NonoCard
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CommonActions.CardAttack(this, cardPlay.Target).Execute(choiceContext);
+        await PowerCmd.Apply<BurnPower>(choiceContext, cardPlay.Target, base.DynamicVars["Burn"].BaseValue, base.Owner.Creature, this);
     }
     //卡牌效果：对目标造成等同于DynamicVars.Damage数值的伤害
     protected override void OnUpgrade()

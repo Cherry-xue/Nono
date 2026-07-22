@@ -14,6 +14,10 @@ public class NonoKeywords
     [CustomEnum("PotionMaking")]
     [KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword PotionMaking;
+    //药水合成
+    [CustomEnum("PotionConflation")]
+    [KeywordProperties(AutoKeywordPosition.Before)]
+    public static CardKeyword PotionConflation;
     //火山
     [CustomEnum("VolcanoKeywords")]
     [KeywordProperties(AutoKeywordPosition.Before)]

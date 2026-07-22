@@ -1,8 +1,10 @@
 {
-  "NONO-MAGICCARD.description": "拥有此词条的卡牌为魔法牌。",
+  "NONO-MAGICCARD.description": "拥有此词条的卡牌为[gold]魔法[/gold]牌。",
   "NONO-MAGICCARD.title": "魔法",
-  "NONO-POTIONMAKING.description": "拥有此词条的卡牌可以制作药水。",
+  "NONO-POTIONMAKING.description": "拥有此词条的卡牌可以制作药水。\n将在一个[gold]特殊药水池[/gold]中抽取药水。",
   "NONO-POTIONMAKING.title": "药水制作",
+  "NONO-POTIONCONFLATION.description": "按照一定优先级和配方尝试合成药水。\n高级药水的合成优先级更高。",
+  "NONO-POTIONCONFLATION.title": "药水合成",
   "NONO-VOLCANOKEYWORDS.description": "过来的都得死。",
   "NONO-VOLCANOKEYWORDS.title": "火山"
 }

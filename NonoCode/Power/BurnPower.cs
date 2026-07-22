@@ -10,9 +10,8 @@ using MegaCrit.Sts2.Core.Hooks;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
-using Nono.NonoCode.Powers;
 
-namespace Nono.NonoCode.Power;
+namespace Nono.NonoCode.Powers;
 
 public sealed class BurnPower : NonoPower
 {
@@ -27,7 +26,7 @@ public sealed class BurnPower : NonoPower
     public void SetDamage()
     {
         AssertMutable();
-        this.DynamicVars["RealDamage"].BaseValue = Amount * 2m;
+        DynamicVars["RealDamage"].BaseValue = Amount * 2m;
     }
     //定义一个方法来设置伤害数值，伤害数值为能力数值的两倍
     public override IEnumerable<HealthBarForecastSegment> GetHealthBarForecastSegments(HealthBarForecastContext context)
@@ -60,13 +59,13 @@ public sealed class BurnPower : NonoPower
     //定义一个方法来计算下回合即将受到的总伤害，考虑到能力数值的递减和可能的伤害修改
     public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
-        if (side != base.Owner.Side)
+        if (side != Owner.Side)
         {
             return;
         }
 
-        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), base.Owner, Amount * 2, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
-        if (base.Owner.IsAlive)
+        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner, Amount * 2, ValueProp.Unblockable | ValueProp.Unpowered, null, null);
+        if (Owner.IsAlive)
         {
             decimal cost = Math.Max(Amount / 2, 1m) * -1m;
             await PowerCmd.ModifyAmount(new ThrowingPlayerChoiceContext(), this, cost, null, null, false);

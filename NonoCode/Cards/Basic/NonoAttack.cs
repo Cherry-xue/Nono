@@ -22,7 +22,7 @@ public class NonoAttack() : NonoCard
     //卡牌效果：对目标造成等同于DynamicVars.Damage数值的伤害
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2m);
+        DynamicVars.Damage.UpgradeValueBy(3m);
     }
-    //升级效果：伤害数值增加2
+    //升级效果：伤害数值增加3
 }

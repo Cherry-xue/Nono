@@ -4,7 +4,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
-using Nono.NonoCode.Power;
+using Nono.NonoCode.Powers;
 
 namespace Nono.NonoCode.Cards;
 
@@ -17,7 +17,7 @@ public class WallOfFire() : NonoCard
     public override bool GainsBlock => true;
     //卡牌属性：提供格挡
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DynamicVar("WallOfFire", 3m),
+        new DynamicVar("WallOfFire", 2m),
         new BlockVar(16m, ValueProp.Move)
     ];
     //定义可变参数：WallOfFire数值，初始值为3；Block数值，初始值为16

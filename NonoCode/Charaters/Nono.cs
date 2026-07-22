@@ -2,9 +2,7 @@ using BaseLib.Abstracts;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.PotionPools;
 using Nono.NonoCode.Cards;
-using Nono.NonoCode.Cards.Common;
 using Nono.NonoCode.Extensions;
 using Nono.NonoCode.Relics;
 
@@ -26,13 +24,16 @@ public class Nono : PlaceholderCharacterModel
 	//始终显示星辉计数器。
 	public override IEnumerable<CardModel> StartingDeck => [
 		ModelDb.Card<NonoAttack>(),
-		ModelDb.Card<NonoAttack>(),
+        ModelDb.Card<NonoAttack>(),
+        ModelDb.Card<NonoAttack>(),
+        ModelDb.Card<NonoAttack>(),
 		ModelDb.Card<NonoBlock>(),
-		ModelDb.Card<PotionConflate>(),
-        ModelDb.Card<Explosion>(),
-        ModelDb.Card<PeachofWisdom>(),
-        ModelDb.Card<OverflowManaRecycle>(),
-        ModelDb.Card<CondensingMana>()
+        ModelDb.Card<NonoBlock>(),
+        ModelDb.Card<NonoBlock>(),
+        ModelDb.Card<NonoBlock>(),
+        ModelDb.Card<FireBall>(),
+        ModelDb.Card<PotionConflate>(),
+        ModelDb.Card<PotionProduction>()
     ];
 	//初始卡牌
     public override IReadOnlyList<RelicModel> StartingRelics => [ModelDb.Relic<NonoNoBag>()];

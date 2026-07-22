@@ -22,7 +22,7 @@ public sealed class OverflowManaRecyclePower : NonoPower
     {
         if (cardPlay.Card.Owner == base.Owner.Player && cardPlay.Card.Keywords.Contains(NonoKeywords.MagicCard))
         {
-            await CreatureCmd.GainBlock(base.Owner, base.Amount, ValueProp.Unpowered, null);
+            await CreatureCmd.GainBlock(Owner, Amount, ValueProp.Unpowered, null);
         }
     }
     //定义能力效果：在玩家使用包含“MagicCard”关键词的卡牌前，获得等同于能力数值的格挡
