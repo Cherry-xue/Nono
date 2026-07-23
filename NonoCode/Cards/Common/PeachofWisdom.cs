@@ -17,9 +17,9 @@ public sealed class PeachofWisdom() : NonoCard
         CardModel cardModel;
         do
         {
-            cardModel = await CardPileCmd.Draw(choiceContext, base.Owner);
+            cardModel = await CardPileCmd.Draw(choiceContext, Owner);
         }
-        while (cardModel != null && cardModel.Keywords.Contains(NonoKeywords.MagicCard) && CardPile.GetCards(base.Owner, PileType.Hand).Count() < 10);
+        while (cardModel != null && cardModel.Keywords.Contains(NonoKeywords.MagicCard) && CardPile.GetCards(Owner, PileType.Hand).Count() < 10);
     }
     //卡牌效果：抽一张牌，如果抽到的牌是魔法牌且手牌数量未满10张，则继续抽牌，直到抽到非魔法牌或手牌数量满10张为止
     protected override void OnUpgrade()

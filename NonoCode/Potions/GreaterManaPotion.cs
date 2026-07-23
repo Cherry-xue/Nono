@@ -17,8 +17,9 @@ public class GreaterManaPotion : NonoPotions
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new StarsVar(5)];
 
-    protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
+    protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature target)
     {
+        AssertValidForTargetedPotion(target);
         await PlayerCmd.GainStars(DynamicVars.Stars.BaseValue, Owner);
     }
 }

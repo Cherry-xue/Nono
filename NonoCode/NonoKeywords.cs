@@ -22,5 +22,8 @@ public class NonoKeywords
     [CustomEnum("VolcanoKeywords")]
     [KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword VolcanoKeywords;
-
+    //卷轴
+    [CustomEnum("ScrollKeywords")]
+    [KeywordProperties(AutoKeywordPosition.Before)]
+    public static CardKeyword ScrollKeywords;
 }

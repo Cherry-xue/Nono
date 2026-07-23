@@ -6,5 +6,7 @@
   "NONO-POTIONCONFLATION.description": "按照一定优先级和配方尝试合成药水。\n高级药水的合成优先级更高。",
   "NONO-POTIONCONFLATION.title": "药水合成",
   "NONO-VOLCANOKEYWORDS.description": "过来的都得死。",
-  "NONO-VOLCANOKEYWORDS.title": "火山"
+  "NONO-VOLCANOKEYWORDS.title": "火山",
+  "NONO-SCROLLKEYWORDS.description": "本场战斗中可以被免费打出。",
+  "NONO-SCROLLKEYWORDS.title": "卷轴"
 }

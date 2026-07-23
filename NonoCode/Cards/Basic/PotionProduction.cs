@@ -22,6 +22,7 @@ public class PotionProduction() : NonoCard
     private readonly List<PotionModel> PotionPool =
     [
         ModelDb.Potion<LesserManaPotion>(),
+        ModelDb.Potion<LesserSwiftPotion>()
     ];
     //定义药水池
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

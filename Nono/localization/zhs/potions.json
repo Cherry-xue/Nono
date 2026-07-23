@@ -8,5 +8,7 @@
   "NONO-GREATER_MANA_POTION.description": "获得{singleManaIcon}{singleManaIcon}{singleManaIcon}{singleManaIcon}{singleManaIcon}",
   "NONO-GREATER_MANA_POTION.title": "强效魔力药水",
   "NONO-SUPER_MANA_POTION.description": "获得12{singleManaIcon}",
-  "NONO-SUPER_MANA_POTION.title": "超级魔力药水"
+  "NONO-SUPER_MANA_POTION.title": "超级魔力药水",
+  "NONO-LESSER_SWIFT_POTION.description": "抽取1张牌。",
+  "NONO-LESSER_SWIFT_POTION.title": "弱效迅捷药水"
 }

@@ -19,9 +19,9 @@ public class PotionShapedObsidian : NonoPotions
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(20m, ValueProp.Unpowered)];
 
-    protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
+    protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature target)
     {
-        PotionModel.AssertValidForTargetedPotion(target);
+        AssertValidForTargetedPotion(target);
         await CreatureCmd.Damage(choiceContext, target, base.DynamicVars.Damage, base.Owner.Creature, null);
     }
 }
