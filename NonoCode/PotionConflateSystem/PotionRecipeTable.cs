@@ -4,23 +4,38 @@ using Nono.NonoCode.Potions;
 
 namespace Nono.NonoCode.PotionConflateSystem;
 
-public static class PotionRecipeTable
+public static partial class PotionRecipeTable
 {
-	public static readonly List<PotionRecipe> Recipes = new List<PotionRecipe>
-	{
-		//2强效魔力药水->超级魔力药水
-		new(new Dictionary<Type, int>{{typeof(GreaterManaPotion),2},}, ModelDb.Potion<SuperManaPotion>()),
+    private static List<PotionRecipe> _recipes;
 
-		//2魔力药水->强效魔力药水
-		new(new Dictionary<Type, int>{{typeof(ManaPotion),2},}, ModelDb.Potion<GreaterManaPotion>()),
+    public static List<PotionRecipe> Recipes
+    {
+        get
+        {
+            if (_recipes == null)
+            {
+                _recipes = new List<PotionRecipe>();
+                LoadAllRecipes();
+            }
+            return _recipes;
+        }
+    }
 
-		//2弱效魔力药水->魔力药水
-		new(new Dictionary<Type, int>{{typeof(LesserManaPotion),2},}, ModelDb.Potion<ManaPotion>()),
+    private static void LoadAllRecipes()
+    {
+        // 按优先级顺序加载
+        // 先加载特殊配方的（索引0）
 
-		//2弱效敏捷药水->敏捷药水
-		new(new Dictionary<Type, int>{{typeof(LesserSwiftPotion),2},}, ModelDb.Potion<SwiftPotion>()),
+        // 再加载高级的（追加到末尾）
+        LoadHighLevelRecipes();
+        // 再加载中级的（追加到末尾）
+        LoadMidLevelRecipes();
+        // 最后加载低级的（追加到末尾）
+        LoadLowLevelRecipes();
+    }
+    static partial void LoadHighLevelRecipes();
+    static partial void LoadMidLevelRecipes();
+    static partial void LoadLowLevelRecipes();
 
 
-
-	};
 }

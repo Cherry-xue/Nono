@@ -40,9 +40,6 @@ public class WritingScroll() : NonoCard
             //添加卡牌关键词：卷轴
             CardCmd.ApplyKeyword(card_1, NonoKeywords.ScrollKeywords);
             CardCmd.ApplyKeyword(card_2, NonoKeywords.ScrollKeywords);
-            //添加卡牌关键词：消耗
-            CardCmd.ApplyKeyword(card_1, CardKeyword.Exhaust);
-            CardCmd.ApplyKeyword(card_2, CardKeyword.Exhaust);
             //将克隆卡牌添加到抽牌堆和弃牌堆
             CardPileAddResult drawResult = await CardPileCmd.AddGeneratedCardToCombat(card_1, PileType.Draw, Owner, CardPilePosition.Random);
             CardPileAddResult discardResult = await CardPileCmd.AddGeneratedCardToCombat(card_2, PileType.Discard, Owner);
@@ -52,7 +49,6 @@ public class WritingScroll() : NonoCard
                 CardModel card_3 = selection.CreateClone();
                 card_3.SetToFreeThisCombat();
                 CardCmd.ApplyKeyword(card_3, NonoKeywords.ScrollKeywords);
-                CardCmd.ApplyKeyword(card_3, CardKeyword.Exhaust);
                 await CardPileCmd.AddGeneratedCardToCombat(card_3, PileType.Hand, Owner);
             }
             //如果卡牌升级，则再创建一个克隆卡牌并添加到手牌

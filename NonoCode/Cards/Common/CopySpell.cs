@@ -37,8 +37,6 @@ public class CopySpell() : NonoCard
             card.SetToFreeThisCombat();
             //添加卡牌关键词：卷轴
             CardCmd.ApplyKeyword(card, NonoKeywords.ScrollKeywords);
-            //添加卡牌关键词：消耗
-            CardCmd.ApplyKeyword(card, CardKeyword.Exhaust);
             //将克隆卡牌添加到弃牌堆
             CardPileAddResult discardResult = await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Discard, Owner);
             CardCmd.PreviewCardPileAdd(discardResult);
