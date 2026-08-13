@@ -22,7 +22,12 @@ public class PotionProduction() : NonoCard
     private readonly List<PotionModel> PotionPool =
     [
         ModelDb.Potion<LesserManaPotion>(),
-        ModelDb.Potion<LesserSwiftPotion>()
+        ModelDb.Potion<LesserSwiftPotion>(),
+        ModelDb.Potion<LesserHealingPotion>(),
+        ModelDb.Potion<SwiftnessPotion>(),
+        ModelDb.Potion<IronskinPotion>(),
+        ModelDb.Potion<LesserExplosiveAmpoule>(),
+        ModelDb.Potion<LesserFirePotion>()
     ];
     //定义药水池
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -37,6 +42,7 @@ public class PotionProduction() : NonoCard
     protected override void OnUpgrade()
     {
         DynamicVars["PotionCount"].UpgradeValueBy(1m);
+        EnergyCost.UpgradeBy(-1);
     }
     //升级效果:制作的药水数量增加1
 }

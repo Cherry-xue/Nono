@@ -14,6 +14,8 @@ public static partial class PotionRecipeTable
             new PotionRecipe(new Dictionary<Type, int> {{typeof(LesserManaPotion), 2}}, ModelDb.Potion<ManaPotion>() ),
             //2弱效敏捷药水->敏捷药水
             new PotionRecipe(new Dictionary<Type, int> {{typeof(LesserSwiftPotion), 2}}, ModelDb.Potion<SwiftPotion>() ),
+            //2弱效治疗药水->治疗药水
+            new PotionRecipe(new Dictionary<Type, int> {{typeof(LesserHealingPotion), 2}}, ModelDb.Potion<HealingPotion>() ),
         });
     }
 }

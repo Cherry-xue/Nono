@@ -19,5 +19,8 @@
   "NONO-WALL_OF_FIRE_POWER.title": "火墙术",
   "NONO-MAGIC_CIRCUIT_POWER.description": "每当你打出三张[gold]魔法[/gold]牌时，获得[blue]1[/blue]点[gold]魔力[/gold]。",
   "NONO-MAGIC_CIRCUIT_POWER.smartDescription": "每当你打出三张[gold]魔法[/gold]牌时，获得[blue]1[/blue]点[gold]魔力[/gold]。",
-  "NONO-MAGIC_CIRCUIT_POWER.title": "魔力回路"
+  "NONO-MAGIC_CIRCUIT_POWER.title": "魔力回路",
+  "NONO-HALO_POWER.description": "被施加光晕的生物会在自身回合开始时失去生命三次。光晕层数每回合减少[blue]一半[/blue]。",
+  "NONO-HALO_POWER.smartDescription": "在{OnPlayer:你的回合|其回合}开始时失去[blue]{RealDamage:diff()}[/blue]点生命三次，然后将[gold]光晕[/gold]层数减少[blue]一半[/blue]。",
+  "NONO-HALO_POWER.title": "光晕"
 }

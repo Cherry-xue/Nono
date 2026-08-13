@@ -1,0 +1,59 @@
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models.Powers;
+
+namespace Nono.NonoCode.Cards.Rare;
+
+public class BeyondDimension() : NonoCard
+    (18, CardType.Skill, CardRarity.Rare, TargetType.Self)
+//定义卡牌基本属性：18能量，技能，罕见稀有度，目标为自己
+{
+    protected override IEnumerable<DynamicVar> CanonicalVars => 
+    [
+        new CardsVar(5),
+        new EnergyVar(3),
+        new StarsVar(5)
+    ];
+    //定义可变参数:抽牌数值，初始值为5；能量数值，初始值为3；星星数值，初始值为5
+    public override IEnumerable<CardKeyword> CanonicalKeywords => 
+    [
+        NonoKeywords.MagicCard,
+        CardKeyword.Exhaust
+    ];
+    //卡牌关键词：魔法牌,消耗
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+    [
+        HoverTipFactory.FromKeyword(NonoKeywords.MagicAmplification)
+    ];
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+    {
+        await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
+        await PlayerCmd.GainStars(DynamicVars.Stars.BaseValue, Owner);
+        await CardPileCmd.Add(PileType.Hand.GetPile(Owner).Cards, PileType.Draw);
+        await CardPileCmd.Shuffle(choiceContext, Owner);
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
+    }
+    //卡牌效果:获得能量数值点能量，获得星星数值点星星，将手牌放入抽牌堆，洗牌，从抽牌堆中抽取抽牌数值张卡牌
+    public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+    {
+        if (cardPlay.Card.Keywords.Contains(NonoKeywords.MagicCard))
+        {
+            ReduceCostBy(2);
+        }
+    }
+    //卡牌效果:如果打出的是魔法牌,则减少2点能量消耗
+    private void ReduceCostBy(int amount)
+    {
+        EnergyCost.AddThisCombat(-amount);
+    }
+    //卡牌效果:减少能量消耗,减少的数值只在本次战斗中有效 
+    protected override void OnUpgrade()
+    {
+        DynamicVars.Cards.UpgradeValueBy(3m);
+        DynamicVars.Energy.UpgradeValueBy(2m);
+    }
+    //升级效果:增加抽牌数值3点,增加获得能量数值2点
+}

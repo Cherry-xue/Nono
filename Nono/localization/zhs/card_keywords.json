@@ -8,5 +8,7 @@
   "NONO-VOLCANOKEYWORDS.description": "过来的都得死。",
   "NONO-VOLCANOKEYWORDS.title": "火山",
   "NONO-SCROLLKEYWORDS.description": "本场战斗中可以被免费打出。\n打出后将会从本场战斗移除,不会进入消耗堆。",
-  "NONO-SCROLLKEYWORDS.title": "卷轴"
+  "NONO-SCROLLKEYWORDS.title": "卷轴",
+  "NONO-MAGICAMPLIFICATION.description": "本场战斗，每打出一张[gold]魔法[/gold]牌，触发本卡牌的特殊效果。",
+  "NONO-MAGICAMPLIFICATION.title": "魔力增幅"
 }

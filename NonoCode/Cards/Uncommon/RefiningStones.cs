@@ -7,7 +7,6 @@ using Nono.NonoCode.Potions;
 
 namespace Nono.NonoCode.Cards;
 
-
 public class RefiningStones() : NonoCard
     (1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
     //定义卡牌基本属性：1能量，技能，罕见稀有度，目标为自身。

@@ -14,6 +14,8 @@ public class NonoBlock() : NonoCard
     //定义卡牌标签：防御
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
     //定义可变参数：Block-格挡值，初始值为5
+    public override bool GainsBlock => true;
+    //定义卡牌是否获得格挡：是
 
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

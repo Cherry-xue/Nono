@@ -26,6 +26,9 @@ public class NonoKeywords
     [CustomEnum("ScrollKeywords")]
     [KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword ScrollKeywords;
-
+    //魔力增幅
+    [CustomEnum("MagicAmplification")]
+    [KeywordProperties(AutoKeywordPosition.Before)]
+    public static CardKeyword MagicAmplification;
 }
 

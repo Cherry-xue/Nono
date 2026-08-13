@@ -12,7 +12,8 @@ public static partial class PotionRecipeTable
         {
             //2强效魔力药水->超级魔力药水
             new PotionRecipe(new Dictionary<Type, int> {{typeof(GreaterManaPotion), 2}}, ModelDb.Potion<SuperManaPotion>() ),
-
+            //2强效治疗药水->超级治疗药水
+            new PotionRecipe(new Dictionary<Type, int> {{typeof(GreaterHealingPotion), 2}}, ModelDb.Potion<SuperHealingPotion>() ),
         });
     }
 }

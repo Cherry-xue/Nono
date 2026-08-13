@@ -8,16 +8,11 @@ using MegaCrit.Sts2.Core.Models;
 namespace Nono.NonoCode.Cards;
 
 public class CopySpell() : NonoCard
-    (1, CardType.Skill, CardRarity.Common, TargetType.Self)
-//定义卡牌基本属性：1能量，技能，普通稀有度，目标为自己
+    (0, CardType.Skill, CardRarity.Common, TargetType.Self)
+//定义卡牌基本属性：0能量，技能，普通稀有度，目标为自己
 {
     public override int CanonicalStarCost => 1;
     //定义辉星消耗为1
-    public override IEnumerable<CardKeyword> CanonicalKeywords =>
-    [
-        CardKeyword.Exhaust
-    ];
-    //卡牌关键词：消耗
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromKeyword(NonoKeywords.ScrollKeywords),
@@ -37,9 +32,9 @@ public class CopySpell() : NonoCard
             card.SetToFreeThisCombat();
             //添加卡牌关键词：卷轴
             CardCmd.ApplyKeyword(card, NonoKeywords.ScrollKeywords);
-            //将克隆卡牌添加到弃牌堆
-            CardPileAddResult discardResult = await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Discard, Owner);
-            CardCmd.PreviewCardPileAdd(discardResult);
+            //将克隆卡牌添加到抽牌堆
+            CardPileAddResult drawResult = await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Draw, Owner, CardPilePosition.Random);
+            CardCmd.PreviewCardPileAdd(drawResult);
         }
     }
     protected override void OnUpgrade()

@@ -23,29 +23,23 @@ public class FlameHealing() : NonoCard
         new BlockVar(4, ValueProp.Move),
         new CalculationBaseVar(0m),
         new CalculationExtraVar(1m),
-        new CalculatedVar("CalculatedHeal").WithMultiplier((CardModel card, Creature? _) => GetStatuses(card.Owner).Count() *0.5m)
+        new CalculatedVar("CalculatedHeal").WithMultiplier((CardModel card, Creature _) => GetStatuses(card.Owner).Count())
     ];
-    //定义可变参数：伤害数值，初始值为3；格挡数值，初始值为4
+    //定义可变参数：格挡数值，初始值为4
     public override IEnumerable<CardKeyword> CanonicalKeywords => [NonoKeywords.MagicCard];
     //卡牌关键词：魔法牌
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>[HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        int i = 0;
-        await CreatureCmd.GainBlock(base.Owner.Creature, base.DynamicVars.Block, cardPlay);
-        List<CardModel> list = GetStatuses(base.Owner).ToList();
+        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
+        List<CardModel> list = GetStatuses(Owner).ToList();
         foreach (CardModel item in list)
         {
             await CardCmd.Exhaust(choiceContext, item);
-            i++;
-            if (i == 2)
-            {
-                await CreatureCmd.Heal(Owner.Creature, 1, true);
-                i = 0;
-            }
+            await CreatureCmd.Heal(Owner.Creature, 1, true);
         }
     }
-    //卡牌效果:获得格挡，格挡数值等同于DynamicVars.Block的数值，之后将玩家所有非消耗堆的状态牌消耗掉，每消耗两张状态牌回复1点生命
+    //卡牌效果:获得格挡，格挡数值等同于DynamicVars.Block的数值，之后将玩家所有非消耗堆的状态牌消耗掉，每消耗1张状态牌回复1点生命
     private static IEnumerable<CardModel> GetStatuses(Player owner)
     {
         return owner.PlayerCombatState.AllCards.Where((CardModel c) => c.Type == CardType.Status && c.Pile.Type != PileType.Exhaust);
@@ -53,7 +47,7 @@ public class FlameHealing() : NonoCard
     //获取玩家所有非消耗堆的状态牌
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Block.UpgradeValueBy(2m);
+        DynamicVars.Block.UpgradeValueBy(2m);
     }
     //升级效果：格挡数值增加2
 }

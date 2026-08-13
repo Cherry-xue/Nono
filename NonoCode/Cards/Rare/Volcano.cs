@@ -28,9 +28,9 @@ public class Volcano() : NonoCard
     //定义可变参数：伤害数值，初始值为5,灼烧数值，初始值为3
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<VolcanoPower>(choiceContext, base.Owner.Creature, base.DynamicVars["Burn"].BaseValue, base.Owner.Creature, this);
-        await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(ResolveStarXValue()).FromCard(this).TargetingRandomOpponents(base.CombatState).Execute(choiceContext);
-        await PowerCmd.Remove<VolcanoPower>(base.Owner.Creature);
+        await PowerCmd.Apply<VolcanoPower>(choiceContext, Owner.Creature, DynamicVars["Burn"].BaseValue, Owner.Creature, this);
+        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).WithHitCount(ResolveStarXValue()).FromCard(this).TargetingRandomOpponents(CombatState).Execute(choiceContext);
+        await PowerCmd.Remove<VolcanoPower>(Owner.Creature);
     }
     //卡牌效果:获得一个VolcanoPower，效果为：拥有VolcanoKeywords的卡牌造成伤害时，给予敌人等同于DynamicVars["Burn"]层数的灼烧,之后对随机敌人造成等同于DynamicVars.Damage数值的伤害，伤害次数等于玩家投入的魔力数，最后移除VolcanoPower
     protected override void OnUpgrade()

@@ -7,8 +7,8 @@ using Nono.NonoCode.Powers;
 namespace Nono.NonoCode.Cards;
 
 public class MagicCircuit() : NonoCard
-    (2, CardType.Power, CardRarity.Uncommon, TargetType.Self)
-//定义卡牌基本属性：2能量，能力，罕见稀有度，目标为自己
+    (1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+//定义卡牌基本属性：1能量，能力，罕见稀有度，目标为自己
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
@@ -22,7 +22,7 @@ public class MagicCircuit() : NonoCard
     //卡牌效果：施加1层MagicCircuitPower
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
+        AddKeyword(CardKeyword.Innate);
     }
-    //升级效果：能量消耗减少1
+    //升级效果：添加固有关键词
 }

@@ -10,7 +10,7 @@ namespace Nono.NonoCode.Cards;
 
 public class WallOfFire() : NonoCard
     (1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
-//定义卡牌基本属性：1能量，能力，罕见稀有度，目标为自己
+//定义卡牌基本属性：1能量，技能，罕见稀有度，目标为自己
 {
     public override int CanonicalStarCost => 2;
     //定义辉星消耗为2
