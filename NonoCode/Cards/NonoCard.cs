@@ -22,7 +22,7 @@ public abstract class NonoCard(int cost, CardType type, CardRarity rarity, Targe
 		get
 		{
 			var path = $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".CardImagePath();
-			Log.Info(">>>[NonoMod]CardPath=" + path, 2);
+			//Log.Info(">>>[NonoMod]CardPath=" + path, 2);
 			return ResourceLoader.Exists(path) ? path : "card.png".CardImagePath();
 		}
 	}
@@ -37,7 +37,7 @@ public abstract class NonoCard(int cost, CardType type, CardRarity rarity, Targe
 		get
 		{
 			var path = $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".CardImagePath();
-			Log.Info(">>>[NonoMod]CardPath=" + path, 2);
+			//Log.Info(">>>[NonoMod]CardPath=" + path, 2);
 			return ResourceLoader.Exists(path) ? path : "card.png".CardImagePath();
 		}
 	}
@@ -48,7 +48,7 @@ public abstract class NonoCard(int cost, CardType type, CardRarity rarity, Targe
 		get
 		{
 			var path = $"Beta/{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".CardImagePath();
-			Log.Info(">>>[NonoMod]CardPath=" + path, 2);
+			//Log.Info(">>>[NonoMod]CardPath=" + path, 2);
 			return ResourceLoader.Exists(path) ? path : "Beta/card.png".CardImagePath();
 		}
 	}

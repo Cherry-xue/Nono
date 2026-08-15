@@ -32,7 +32,7 @@ public static class NStarCounterPatch
         val2.Add("singleStarIcon", "[img]res://images/packed/sprite_fonts/star_icon.png[/img]");
         HoverTip val3 = new HoverTip(val, val2, (Texture2D)null);
         typeof(NStarCounter).GetField("_hoverTip", BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(instance, val3);
-        Log.Info(">>>[NonoMod]-- star counter hover tip replaced", 2);
+        Log.Info(">>>[NonoMod]--patch-- star counter hover tip replaced", 2);
     }
     private static void ReplaceIcon(NStarCounter instance)
     {
@@ -52,5 +52,6 @@ public static class NStarCounterPatch
             if (layer1 != null) layer1.Texture = energy_mana_layer_2;
             if (layer2 != null) layer2.Texture = energy_mana_layer_3;
         }
+        Log.Info(">>>[NonoMod]--patch-- star counter icon replaced", 2);
     }
 }

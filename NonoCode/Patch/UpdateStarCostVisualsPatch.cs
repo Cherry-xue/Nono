@@ -16,13 +16,13 @@ public static class UpdateStarCostVisualsPatch
         {
             var starIcon = Traverse.Create(__instance).Field("_starIcon").GetValue<TextureRect>();
             if (__instance.Model is NonoCard mycard) { 
-                Log.Info(">>>[NonoMod]--UpdateStarCostVisuals Successful");
+                Log.Info(">>>[NonoMod]-patch-UpdateStarCostVisuals Successful");
                 Texture2D texture = ResourceLoader.Load<Texture2D>("res://Nono/Images/Packed/Sprite_Fonts/mana_cost_icon.png");
                 starIcon.Texture = texture;
             }
             else
             {
-                Log.Info(">>>[NonoMod]--UpdateStarCostVisuals Skipped for non-NonoCard");
+                Log.Info(">>>[NonoMod]-patch-UpdateStarCostVisuals Skipped for non-NonoCard");
                 Texture2D texture = ResourceLoader.Load<Texture2D>("res://images/ui/combat/energy_star.png");
                 starIcon.Texture = texture;
             }
