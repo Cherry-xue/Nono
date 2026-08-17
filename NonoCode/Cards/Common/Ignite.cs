@@ -26,7 +26,7 @@ public class Ignite() : NonoCard
     {
         await PowerCmd.Apply<BurnPower>(choiceContext, cardPlay.Target, base.DynamicVars["Burn"].BaseValue, base.Owner.Creature, this);
     }
-    //卡牌效果：对目标造成等同于DynamicVars.Damage数值的伤害,并使目标获得等同于DynamicVars["Burn"]数值的BurnPower
+    //卡牌效果：使目标获得等同于DynamicVars["Burn"]数值的BurnPower
     protected override void OnUpgrade()
     {
         DynamicVars["Burn"].UpgradeValueBy(2m);

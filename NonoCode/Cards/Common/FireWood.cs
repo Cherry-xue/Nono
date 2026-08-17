@@ -11,8 +11,8 @@ public class FireWood() : NonoCard
     (1, CardType.Skill, CardRarity.Common, TargetType.Self)
     //定义卡牌基本属性：1能量，技能，普通稀有度，目标为自己
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("FireWood", 4m)];
-    //定义可变参数：FireWood数值，初始值为4
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("PreBurning", 4m)];
+    //定义可变参数：PreBurning数值，初始值为4
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromPower<PreBurningPower>()
@@ -20,13 +20,13 @@ public class FireWood() : NonoCard
     //定义提示：提示PreBurningPower的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<PreBurningPower>(choiceContext, Owner.Creature, DynamicVars["FireWood"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<PreBurningPower>(choiceContext, Owner.Creature, DynamicVars["PreBurning"].BaseValue, Owner.Creature, this);
     }
-    //卡牌效果:获得PreBurningPower效果,层数等同于DynamicVars["FireWood"]数值.
+    //卡牌效果:获得PreBurningPower效果,层数等同于DynamicVars["PreBurning"]数值.
     protected override void OnUpgrade()
     {
 
-        DynamicVars["FireWood"].UpgradeValueBy(2m);
+        DynamicVars["PreBurning"].UpgradeValueBy(2m);
     }
-    //升级效果:FireWood数值增加2
+    //升级效果:PreBurning数值增加2
 }

@@ -3,20 +3,120 @@
   "WorkspaceRootPath": "D:\\Code\\Slay the Spire 2\\object\\Nono\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\patch\\getdescriptionforpilepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\patch\\getdescriptionforpilepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\fatehand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\fatehand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\temperingincreases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\temperingincreases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\rare\\beyonddimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\rare\\beyonddimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\emergencytreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\emergencytreatment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\emberreserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\emberreserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\copyspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\copyspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nono\\localization\\zhs\\cards.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nono\\localization\\zhs\\cards.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\rare\\beyonddimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\rare\\beyonddimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\temperingincreases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\temperingincreases.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nono\\localization\\zhs\\powers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nono\\localization\\zhs\\powers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\firewood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\firewood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\ignite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\ignite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\walloffire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\walloffire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\manablock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\manablock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\peachofwisdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\peachofwisdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\manaburst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\manaburst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\makemanapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\makemanapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\makecommonpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\makecommonpotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\flamearrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\flamearrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\basic\\potionproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\basic\\potionproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\basic\\potionconflate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\basic\\potionconflate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\basic\\nonoblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\basic\\nonoblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\common\\catbite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\common\\catbite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nono\\localization\\zhs\\card_keywords.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nono\\localization\\zhs\\card_keywords.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nono\\localization\\zhs\\potions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nono\\localization\\zhs\\potions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\lightofwisdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\lightofwisdom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\overflowmanarecycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\overflowmanarecycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\flammablepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\flammablepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\magiccircuit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\magiccircuit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\magicsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\magicsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\cards\\uncommon\\refiningstones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|solutionrelative:nonocode\\cards\\uncommon\\refiningstones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A9886E0-9AA4-41E0-BF35-AB9D91883D2F}|Nono.csproj|d:\\code\\slay the spire 2\\object\\nono\\nonocode\\nonokeywords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,69 +130,394 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetDescriptionForPilePatch.cs",
-              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "RelativeDocumentMoniker": "NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "RelativeToolTip": "NonoCode\\Patch\\GetDescriptionForPilePatch.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BeyondDimension.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Rare\\BeyondDimension.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Rare\\BeyondDimension.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Rare\\BeyondDimension.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Rare\\BeyondDimension.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-15T07:10:42.498Z",
+              "WhenOpened": "2026-08-17T12:42:24.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FateHand.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\FateHand.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\FateHand.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\FateHand.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\FateHand.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswAwAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T12:31:10.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EmergencyTreatment.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\EmergencyTreatment.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\EmergencyTreatment.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\EmergencyTreatment.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\EmergencyTreatment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:33:38.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "cards.json",
               "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\cards.json",
               "RelativeDocumentMoniker": "Nono\\localization\\zhs\\cards.json",
               "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\cards.json",
               "RelativeToolTip": "Nono\\localization\\zhs\\cards.json",
-              "ViewState": "AgIAACkAAAAAAAAAAAAnwEEAAAC2AAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE0AAACpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-08-15T07:03:47.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "CopySpell.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\CopySpell.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\CopySpell.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\CopySpell.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\CopySpell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:33:35.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmberReserve.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\EmberReserve.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\EmberReserve.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\EmberReserve.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\EmberReserve.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:40:33.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TemperingIncreases.cs",
               "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\TemperingIncreases.cs",
               "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\TemperingIncreases.cs",
               "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\TemperingIncreases.cs",
               "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\TemperingIncreases.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAA9wDIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T11:05:41.7Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BeyondDimension.cs",
-              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Rare\\BeyondDimension.cs",
-              "RelativeDocumentMoniker": "NonoCode\\Cards\\Rare\\BeyondDimension.cs",
-              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Rare\\BeyondDimension.cs",
-              "RelativeToolTip": "NonoCode\\Cards\\Rare\\BeyondDimension.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowDIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T10:19:01.752Z",
+              "DocumentIndex": 7,
+              "Title": "powers.json",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\powers.json",
+              "RelativeDocumentMoniker": "Nono\\localization\\zhs\\powers.json",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\powers.json",
+              "RelativeToolTip": "Nono\\localization\\zhs\\powers.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-17T11:36:14.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "FireWood.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\FireWood.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\FireWood.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\FireWood.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\FireWood.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:33:44.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ignite.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\Ignite.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\Ignite.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\Ignite.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\Ignite.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAywBoAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:25:59.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WallOfFire.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\WallOfFire.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\WallOfFire.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\WallOfFire.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\WallOfFire.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA7wCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:40:50.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManaBlock.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\ManaBlock.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\ManaBlock.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\ManaBlock.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\ManaBlock.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:24:54.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MakeManaPotion.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\MakeManaPotion.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\MakeManaPotion.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\MakeManaPotion.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\MakeManaPotion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:14:20.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MakeCommonPotion.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\MakeCommonPotion.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\MakeCommonPotion.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\MakeCommonPotion.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\MakeCommonPotion.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T08:08:04.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ManaBurst.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\ManaBurst.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\ManaBurst.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\ManaBurst.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\ManaBurst.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA5wAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:07:32.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PeachofWisdom.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\PeachofWisdom.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\PeachofWisdom.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\PeachofWisdom.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\PeachofWisdom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:26:00.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FlameArrow.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\FlameArrow.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\FlameArrow.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\FlameArrow.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\FlameArrow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:32:39.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PotionConflate.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Basic\\PotionConflate.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Basic\\PotionConflate.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Basic\\PotionConflate.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Basic\\PotionConflate.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:33:29.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PotionProduction.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Basic\\PotionProduction.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Basic\\PotionProduction.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Basic\\PotionProduction.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Basic\\PotionProduction.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T08:07:50.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NonoBlock.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Basic\\NonoBlock.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Basic\\NonoBlock.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Basic\\NonoBlock.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Basic\\NonoBlock.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T11:26:49.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CatBite.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\CatBite.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Common\\CatBite.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Common\\CatBite.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Common\\CatBite.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwBUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T10:35:31.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "card_keywords.json",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\card_keywords.json",
+              "RelativeDocumentMoniker": "Nono\\localization\\zhs\\card_keywords.json",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\card_keywords.json",
+              "RelativeToolTip": "Nono\\localization\\zhs\\card_keywords.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-17T10:50:09.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "potions.json",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\potions.json",
+              "RelativeDocumentMoniker": "Nono\\localization\\zhs\\potions.json",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\Nono\\localization\\zhs\\potions.json",
+              "RelativeToolTip": "Nono\\localization\\zhs\\potions.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-17T10:26:18.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FlammablePoint.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\FlammablePoint.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\FlammablePoint.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\FlammablePoint.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\FlammablePoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:26:11.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LightOfWisdom.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\LightOfWisdom.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\LightOfWisdom.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\LightOfWisdom.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\LightOfWisdom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:26:10.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MagicCircuit.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\MagicCircuit.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\MagicCircuit.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\MagicCircuit.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\MagicCircuit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:26:10.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OverflowManaRecycle.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\OverflowManaRecycle.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\OverflowManaRecycle.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\OverflowManaRecycle.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\OverflowManaRecycle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:26:02.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MagicSearch.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\MagicSearch.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\MagicSearch.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\MagicSearch.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\MagicSearch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:26:04.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RefiningStones.cs",
+              "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\RefiningStones.cs",
+              "RelativeDocumentMoniker": "NonoCode\\Cards\\Uncommon\\RefiningStones.cs",
+              "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\Cards\\Uncommon\\RefiningStones.cs",
+              "RelativeToolTip": "NonoCode\\Cards\\Uncommon\\RefiningStones.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvyYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:14:55.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "NonoKeywords.cs",
               "DocumentMoniker": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\NonoKeywords.cs",
               "RelativeDocumentMoniker": "NonoCode\\NonoKeywords.cs",
               "ToolTip": "D:\\Code\\Slay the Spire 2\\object\\Nono\\NonoCode\\NonoKeywords.cs",
               "RelativeToolTip": "NonoCode\\NonoKeywords.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-13T01:27:34.328Z",
               "EditorCaption": ""

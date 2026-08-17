@@ -3,6 +3,7 @@ using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using Nono.NonoCode.Cards;
+using Nono.NonoCode.Cards.Common;
 using Nono.NonoCode.Extensions;
 using Nono.NonoCode.Relics;
 

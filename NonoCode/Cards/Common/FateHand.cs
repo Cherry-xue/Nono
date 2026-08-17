@@ -3,31 +3,30 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Nono.NonoCode.Cards;
 
-public class TemperingIncreases() : NonoCard
-    (0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
-//定义卡牌基本属性：0能量，攻击，罕见稀有度，目标为任意敌人
+public class FateHand() : NonoCard
+    (5, CardType.Skill, CardRarity.Common, TargetType.Self)
+//定义卡牌基本属性：5能量，技能，普通稀有度，目标为自身
 {
-    public override int CanonicalStarCost => 1;
-    //定义辉星消耗为1
-    protected override IEnumerable<DynamicVar> CanonicalVars => 
+    protected override bool ShouldGlowGoldInternal => DynamicVars["AmplificationCount"].BaseValue >= 5;
+    protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new CalculationBaseVar(7m),
-        new ExtraDamageVar(3m),
-        new DynamicVar("AmplificationCount", 0m),
-        new CalculatedDamageVar(ValueProp.Move).WithMultiplier((card, _) => card.DynamicVars["AmplificationCount"].BaseValue)
+        new CardsVar(2),
+        new DynamicVar("AmplificationCount", 0m)
     ];
-    //定义可变参数：伤害数值，初始值为7,魔力增幅伤害提升数值3
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [NonoKeywords.MagicCard];
-    //定义卡牌关键词：魔法牌
+    //定义可变参数:抽取卡牌数值，初始值为2;魔力增幅次数，初始值为0
+    public override IEnumerable<CardKeyword> CanonicalKeywords => 
+    [
+        NonoKeywords.MagicCard
+    ];
+    //定义卡牌关键词：魔法牌,保留
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(NonoKeywords.MagicAmplification)];
     //定义提示:提示内容为魔力增幅的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await DamageCmd.Attack(DynamicVars.CalculatedDamage).FromCard(this).Targeting(cardPlay.Target).Execute(choiceContext);
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
     }
     //卡牌效果:造成伤害数值等于伤害数值+魔力增幅伤害提升数值*魔力增幅次数
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -41,11 +40,12 @@ public class TemperingIncreases() : NonoCard
     private void AddAmplificationCount()
     {
         DynamicVars["AmplificationCount"].BaseValue += 1;
+        EnergyCost.AddThisCombat(-1);
     }
     //卡牌效果:魔力增幅次数增加1
     protected override void OnUpgrade()
     {
-        DynamicVars.ExtraDamage.UpgradeValueBy(1m);
+        DynamicVars.Cards.UpgradeValueBy(1m);
     }
-    //升级效果：魔力增幅伤害提升数值增加1
+    //升级效果:抽取卡牌数值增加1
 }

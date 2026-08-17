@@ -3,7 +3,6 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Nono.NonoCode.Cards.Rare;
 
@@ -15,9 +14,10 @@ public class BeyondDimension() : NonoCard
     [
         new CardsVar(5),
         new EnergyVar(3),
-        new StarsVar(5)
+        new StarsVar(3),
+        new DynamicVar("AmplificationCount", 0m),
     ];
-    //定义可变参数:抽牌数值，初始值为5；能量数值，初始值为3；星星数值，初始值为5
+    //定义可变参数:抽牌数值，初始值为5；能量数值，初始值为3；星星数值，初始值为3
     public override IEnumerable<CardKeyword> CanonicalKeywords => 
     [
         NonoKeywords.MagicCard,
@@ -41,19 +41,20 @@ public class BeyondDimension() : NonoCard
     {
         if (cardPlay.Card.Keywords.Contains(NonoKeywords.MagicCard))
         {
-            ReduceCostBy(2);
+            AddAmplificationCount();
         }
     }
     //卡牌效果:如果打出的是魔法牌,则减少2点能量消耗
-    private void ReduceCostBy(int amount)
+    private void AddAmplificationCount()
     {
-        EnergyCost.AddThisCombat(-amount);
+        DynamicVars["AmplificationCount"].BaseValue += 1;
+        EnergyCost.AddThisCombat(-2);
     }
     //卡牌效果:减少能量消耗,减少的数值只在本次战斗中有效 
     protected override void OnUpgrade()
     {
-        DynamicVars.Cards.UpgradeValueBy(3m);
-        DynamicVars.Energy.UpgradeValueBy(2m);
+        DynamicVars.Cards.UpgradeValueBy(2m);
+        DynamicVars.Energy.UpgradeValueBy(1m);
     }
-    //升级效果:增加抽牌数值3点,增加获得能量数值2点
+    //升级效果:增加抽牌数值2点,增加获得能量数值1点
 }

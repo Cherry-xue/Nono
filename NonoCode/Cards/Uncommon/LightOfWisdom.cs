@@ -3,11 +3,11 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace Nono.NonoCode.Cards.Common;
+namespace Nono.NonoCode.Cards;
 
 public class LightOfWisdom() : NonoCard
-    (1, CardType.Skill, CardRarity.Common, TargetType.Self)
-//定义卡牌基本属性：0能量，技能，普通稀有度，目标为任意敌人
+    (1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+//定义卡牌基本属性：0能量，技能，罕见稀有度，目标为自身
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [

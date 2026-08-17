@@ -14,19 +14,18 @@ using MegaCrit.Sts2.Core.Helpers;
 namespace Nono.NonoCode.Cards;
 
 public class DivinationBook() : NonoCard
-    (1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
-//定义卡牌基本属性：1能量，攻击，罕见稀有度，目标为任意敌人
+    (1, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
+//定义卡牌基本属性：1能量，攻击，稀有稀有度，目标为任意敌人
 {
     public override int CanonicalStarCost => 1;
     //定义辉星消耗为1  
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(7, ValueProp.Move)];
-    //定义可变参数：伤害数值，初始值为7
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move)];
+    //定义可变参数：伤害数值，初始值为10
     public override IEnumerable<CardKeyword> CanonicalKeywords => 
     [
-        NonoKeywords.MagicCard,
         CardKeyword.Exhaust
     ];
-    //卡牌关键词：魔法牌,消耗
+    //卡牌关键词：消耗
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
@@ -50,7 +49,7 @@ public class DivinationBook() : NonoCard
             }
         }
     }
-    //卡牌效果:对目标造成伤害，伤害数值为7，若目标死亡且触发了致命效果，则随机升级一张可升级的卡牌
+    //卡牌效果:对目标造成伤害，伤害数值为10，若目标死亡且触发了致命效果，则随机升级一张可升级的卡牌
      protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(3m);

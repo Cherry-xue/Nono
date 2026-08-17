@@ -6,17 +6,17 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Nono.NonoCode.Cards;
 
-public class NonoBlock() : NonoCard
-    (1,CardType.Skill, CardRarity.Basic,TargetType.Self)
-    //定义卡牌基本属性：1能量，能力，基础稀有度，目标为自己
+public class ManaBlock() : NonoCard
+    (0, CardType.Skill, CardRarity.Common, TargetType.Self)
+//定义卡牌基本属性：0能量，技能，基础稀有度，目标为自己
 {
-    protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
-    //定义卡牌标签：防御
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
-    //定义可变参数：Block-格挡值，初始值为5
+    public override int CanonicalStarCost => 1;
+    //定义星辉消耗为1
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move)];
+    //定义可变参数：Block-格挡值，初始值为8
     public override bool GainsBlock => true;
     //定义卡牌是否获得格挡：是
-
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [NonoKeywords.MagicCard];
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CommonActions.CardBlock(this, cardPlay);
@@ -26,5 +26,5 @@ public class NonoBlock() : NonoCard
     {
         DynamicVars.Block.UpgradeValueBy(3m);
     }
-    //升级效果:获得的格挡数值增加3
+    //升级效果:格挡数值增加3
 }
