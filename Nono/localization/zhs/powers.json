@@ -22,5 +22,11 @@
   "NONO-MAGIC_CIRCUIT_POWER.title": "魔力回路",
   "NONO-HALO_POWER.description": "被施加光晕的生物会在自身回合开始时失去生命三次。光晕层数每回合减少[blue]一半[/blue]。",
   "NONO-HALO_POWER.smartDescription": "在{OnPlayer:你的回合|其回合}开始时失去[blue]{RealDamage:diff()}[/blue]点生命三次，然后将[gold]光晕[/gold]层数减少[blue]一半[/blue]。",
-  "NONO-HALO_POWER.title": "光晕"
+  "NONO-HALO_POWER.title": "光晕",
+  "NONO-AFTER_GLOW_POWER.description": "将燃烧提纯为光晕时会获得余晖,余晖会按照不同模式触发不同效果",
+  "NONO-AFTER_GLOW_POWER.smartDescription": "将燃烧提纯为光晕时会获得余晖,余晖会按照不同模式触发不同效果",
+  "NONO-AFTER_GLOW_POWER.title": "余晖",
+  "NONO-EMBER_STRENGTH_POWER.description": "在回合开始时,消耗余晖。\n每消耗10层余晖,获得1点力量。",
+  "NONO-EMBER_STRENGTH_POWER.smartDescription": "在{OnPlayer:你的回合|其回合}开始时,消耗余晖。\n每消耗{TriggerAmount:diff()}层余晖,获得1点力量。",
+  "NONO-EMBER_STRENGTH_POWER.title": "余烬之力"
 }

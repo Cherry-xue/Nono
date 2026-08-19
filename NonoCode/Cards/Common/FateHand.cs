@@ -11,6 +11,7 @@ public class FateHand() : NonoCard
 //定义卡牌基本属性：5能量，技能，普通稀有度，目标为自身
 {
     protected override bool ShouldGlowGoldInternal => DynamicVars["AmplificationCount"].BaseValue >= 5;
+    //定义卡牌发光条件：当魔力增幅次数大于等于5时，卡牌发光
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new CardsVar(2),
@@ -28,7 +29,7 @@ public class FateHand() : NonoCard
     {
         await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
     }
-    //卡牌效果:造成伤害数值等于伤害数值+魔力增幅伤害提升数值*魔力增幅次数
+    //卡牌效果:抽取等同于DynamicVars.Cards数值的卡牌
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         if (cardPlay.Card.Keywords.Contains(NonoKeywords.MagicCard))
@@ -42,7 +43,7 @@ public class FateHand() : NonoCard
         DynamicVars["AmplificationCount"].BaseValue += 1;
         EnergyCost.AddThisCombat(-1);
     }
-    //卡牌效果:魔力增幅次数增加1
+    //卡牌效果:魔力增幅次数增加1,本场战斗中能量消耗减少1
     protected override void OnUpgrade()
     {
         DynamicVars.Cards.UpgradeValueBy(1m);

@@ -19,15 +19,15 @@ public sealed class WallOfFirePower : NonoPower
     //显示BurnPower的相关信息
     public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult _, ValueProp props, Creature? dealer, CardModel? __)
     {
-        if (target == base.Owner && dealer != null && props.IsPoweredAttack())
+        if (target == Owner && dealer != null && props.IsPoweredAttack())
         {
-            await PowerCmd.Apply<BurnPower>(choiceContext, dealer, base.Amount, base.Owner, null);
+            await PowerCmd.Apply<BurnPower>(choiceContext, dealer, Amount, Owner, null);
         }
     }
     //当拥有者受到伤害时,如果伤害来源不为空且伤害类型为攻击,则对伤害来源施加等同于WallofFirePower数值的BurnPower
     public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
-        if (base.Owner.Side != side)
+        if (Owner.Side != side)
         {
             await PowerCmd.Remove(this);
         }

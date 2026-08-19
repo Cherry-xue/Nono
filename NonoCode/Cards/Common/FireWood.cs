@@ -25,7 +25,6 @@ public class FireWood() : NonoCard
     //卡牌效果:获得PreBurningPower效果,层数等同于DynamicVars["PreBurning"]数值.
     protected override void OnUpgrade()
     {
-
         DynamicVars["PreBurning"].UpgradeValueBy(2m);
     }
     //升级效果:PreBurning数值增加2

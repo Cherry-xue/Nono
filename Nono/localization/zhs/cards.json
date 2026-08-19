@@ -76,5 +76,18 @@
   "NONO-EMBER_RESERVE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n获得{PreBurning:diff()}层[gold]预燃[/gold]。",
   "NONO-EMBER_RESERVE.title": "蓄火",
   "NONO-FATE_HAND.description": "[gold]魔力增幅[/gold]:{energyPrefix:energyIcons(1)}费用减少1。\n抽取{Cards:diff()}张牌。{InCombat:\n（[gold]魔力增幅[/gold]：{AmplificationCount:diff()}次）|}",
-  "NONO-FATE_HAND.title": "命运的指引"
+  "NONO-FATE_HAND.title": "命运的指引",
+  "NONO-OFFENSE_AND_DEFENSE.description": "[gold]魔力增幅[/gold]5:[gold]抉择[/gold]强化方向。\n获得{Block:diff()}点[gold]格挡[/gold]。\n造成{Damage:diff()}点伤害。{InCombat:\n（[gold]魔力增幅[/gold]：{AmplificationCount:diff()}次）|}",
+  "NONO-OFFENSE_AND_DEFENSE.title": "攻守兼备",
+  "NONO-TEST_CARD.selectionScreenPrompt": "做出抉择",
+  "NONO-TURN_DEFENSE_INTO_ATTACK.description": "造成{Damage:diff()}点伤害。",
+  "NONO-TURN_DEFENSE_INTO_ATTACK.title": "让守为攻",
+  "NONO-STRENGTHEN_DEFENSES.description": "获得{Block:diff()}点[gold]格挡[/gold]。",
+  "NONO-STRENGTHEN_DEFENSES.title": "强化防御",
+
+  "NONO-TEST_CARD.description": "这是一张测试卡牌。",
+  "NONO-TEST_CARD.title": "测试卡牌",
+  "NONO-TEST_CARDS.description": "这是一张测试卡牌2。",
+  "NONO-TEST_CARDS.title": "测试卡牌2"
+
 }

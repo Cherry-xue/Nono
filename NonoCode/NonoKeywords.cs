@@ -30,5 +30,9 @@ public class NonoKeywords
     [CustomEnum("MagicAmplification")]
     [KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword MagicAmplification;
+    //抉择
+    [CustomEnum("Choice")]
+    [KeywordProperties(AutoKeywordPosition.Before)]
+    public static CardKeyword Choice;
 }
 

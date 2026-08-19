@@ -16,11 +16,11 @@ public sealed class VolcanoPower : NonoPower
     //定义叠加类型：计数器
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<BurnPower>()];
     //显示BurnPower的相关信息
-    public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature? dealer, DamageResult result, ValueProp props, Creature target, CardModel? cardSource)
+    public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature dealer, DamageResult result, ValueProp props, Creature target, CardModel cardSource)
     {
-        if (dealer != null && dealer == base.Owner && props.IsPoweredAttack() && cardSource.Keywords.Contains(NonoKeywords.VolcanoKeywords))
+        if (dealer != null && dealer == Owner && props.IsPoweredAttack() && cardSource.Keywords.Contains(NonoKeywords.VolcanoKeywords))
         {
-            await PowerCmd.Apply<BurnPower>(choiceContext, target, base.Amount, base.Owner, null);
+            await PowerCmd.Apply<BurnPower>(choiceContext, target, Amount, Owner, null);
         }
     }
     //造成伤害时,施加等同VolcanoPower层数的BurnPower

@@ -1,7 +1,10 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using Nono.NonoCode.Powers;
+using MegaCrit.Sts2.Core.Rooms;
 
 namespace Nono.NonoCode.Relics;
 
@@ -20,15 +23,24 @@ public class NonoNoBag : NonoRelics
     ];
     public override async Task AfterObtained()
     {
-        await PlayerCmd.GainMaxPotionCount(base.DynamicVars["PotionSlots"].IntValue, base.Owner);
+        await PlayerCmd.GainMaxPotionCount(DynamicVars["PotionSlots"].IntValue, Owner);
     }
     //当玩家获得该遗物时，调用PlayerCmd.GainMaxPotionCount命令，增加玩家的最大药水槽数量，数量等同于DynamicVars["PotionSlots"]的整数值。
     public override async Task AfterEnergyResetLate(Player player)
     {
-        if (player == base.Owner)
+        if (player == Owner)
         {
-            await PlayerCmd.GainStars(base.DynamicVars.Stars.BaseValue, base.Owner);
+            await PlayerCmd.GainStars(DynamicVars.Stars.BaseValue, Owner);
         }
     }
     //在每回合开始时，如果玩家是该遗物的拥有者，调用PlayerCmd.GainStars命令，增加玩家的星星数量，数量等同于DynamicVars.Stars的基础值。
+    public override async Task AfterRoomEntered(AbstractRoom room)
+    {
+        if (room is CombatRoom)
+        {
+            Flash();
+            await PowerCmd.Apply<EmberStrengthPower>(new ThrowingPlayerChoiceContext(), Owner.Creature, 1, Owner.Creature, null);
+        }
+    }
+    //当玩家进入战斗房间时，触发遗物的闪光效果，并调用PowerCmd.Apply命令，给玩家施加1层EmberStrengthPower。
 }

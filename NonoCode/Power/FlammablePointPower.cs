@@ -20,9 +20,9 @@ public sealed class FlammablePointPower : NonoPower
     //显示PreBurningPower的相关信息
     public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
-        if (participants.Contains(base.Owner))
+        if (participants.Contains(Owner))
         {
-            await PowerCmd.Apply<PreBurningPower>(new ThrowingPlayerChoiceContext(), base.Owner, base.Amount, base.Owner, null);
+            await PowerCmd.Apply<PreBurningPower>(new ThrowingPlayerChoiceContext(), Owner, Amount, Owner, null);
         }
     }
     //在回合开始时,施加等同FlammablePointPower层数的PreBurningPower

@@ -16,7 +16,7 @@ public sealed class PreBurningPower : NonoPower
     //定义叠加类型：计数器
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<BurnPower>()];
     //显示BurnPower的相关信息
-    public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature? dealer, DamageResult result, ValueProp props, Creature target, CardModel? cardSource)
+    public override async Task AfterDamageGiven(PlayerChoiceContext choiceContext, Creature dealer, DamageResult result, ValueProp props, Creature target, CardModel cardSource)
     {
         if (dealer != null && dealer == Owner && props.IsPoweredAttack() /*&& cardSource.Keywords.Contains(NonoKeywords.MagicCard)*/)
         {
