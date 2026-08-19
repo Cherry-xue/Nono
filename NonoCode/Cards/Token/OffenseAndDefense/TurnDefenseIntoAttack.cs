@@ -8,7 +8,7 @@ namespace Nono.NonoCode.Cards;
 
 public class TurnDefenseIntoAttack() : NonoCard
     (1, CardType.Attack, CardRarity.Token, TargetType.AnyEnemy)
-//定义卡牌基本属性：1能量，攻击，基础稀有度，目标为任意敌人
+//定义卡牌基本属性：1能量，攻击，Token稀有度，目标为任意敌人
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(16, ValueProp.Move)];
     //定义可变参数：伤害数值，初始值为16

@@ -7,8 +7,8 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Nono.NonoCode.Cards;
 
 public class StrengthenDefenses() : NonoCard
-    (1, CardType.Skill, CardRarity.Basic, TargetType.Self)
-//定义卡牌基本属性：1能量，能力，基础稀有度，目标为自己
+    (1, CardType.Skill, CardRarity.Token, TargetType.Self)
+//定义卡牌基本属性：1能量，能力，Token稀有度，目标为自己
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(12, ValueProp.Move)];
     //定义可变参数：Block-格挡值，初始值为12

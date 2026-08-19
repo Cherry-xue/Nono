@@ -27,7 +27,7 @@ public class OffenseAndDefense() : NonoCard
     [
         HoverTipFactory.FromKeyword(NonoKeywords.Choice)
     ];
-    //定义提示：提示PreBurningPower的相关信息
+    //定义提示:提示抉择的相关信息
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         //如果魔力增幅大于等于5

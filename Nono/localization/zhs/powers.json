@@ -28,5 +28,8 @@
   "NONO-AFTER_GLOW_POWER.title": "余晖",
   "NONO-EMBER_STRENGTH_POWER.description": "在回合开始时,消耗余晖。\n每消耗10层余晖,获得1点力量。",
   "NONO-EMBER_STRENGTH_POWER.smartDescription": "在{OnPlayer:你的回合|其回合}开始时,消耗余晖。\n每消耗{TriggerAmount:diff()}层余晖,获得1点力量。",
-  "NONO-EMBER_STRENGTH_POWER.title": "余烬之力"
+  "NONO-EMBER_STRENGTH_POWER.title": "余烬之力",
+  "NONO-REIGNITING_FLAME_POWER.description": "在回合开始时,消耗余晖。\n每消耗5层余晖,获得1层预燃。",
+  "NONO-REIGNITING_FLAME_POWER.smartDescription": "在{OnPlayer:你的回合|其回合}开始时,消耗余晖。\n每消耗{TriggerAmount:diff()}层余晖,获得1层预燃。",
+  "NONO-REIGNITING_FLAME_POWER.title": "重燃之焰"
 }

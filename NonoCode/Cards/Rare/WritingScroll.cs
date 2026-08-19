@@ -31,7 +31,7 @@ public class WritingScroll() : NonoCard
         }, source: this)).FirstOrDefault();
         if (selection != null)
         {
-            //创建两个克隆卡牌
+            //创建三个克隆卡牌
             CardModel card_1 = selection.CreateClone();
             CardModel card_2 = selection.CreateClone();
             CardModel card_3 = selection.CreateClone();

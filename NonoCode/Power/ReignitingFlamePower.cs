@@ -5,15 +5,14 @@ using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Nono.NonoCode.Powers;
 
-public sealed class EmberStrengthPower : NonoPower
+public sealed class ReignitingFlamePower : NonoPower
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DynamicVar("TriggerAmount", 10m)
+        new DynamicVar("TriggerAmount", 5m)
     ];
     public override PowerType Type => PowerType.Buff;
     //定义能力类型：增益
@@ -30,9 +29,9 @@ public sealed class EmberStrengthPower : NonoPower
             if (_amount > 0)
             {
                 await PowerCmd.Apply<AfterGlowPower>(new ThrowingPlayerChoiceContext(), Owner, -_amount * (int)DynamicVars["TriggerAmount"].BaseValue, Owner, null);
-                await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), Owner, _amount, Owner, null);
+                await PowerCmd.Apply<PreBurningPower>(new ThrowingPlayerChoiceContext(), Owner, _amount, Owner, null);
             }
         }
     }
-    //在回合开始时,施加余晖层数除以TriggerAmount的StrengthPower
+    //在回合开始时,施加余晖层数除以TriggerAmount的PreBurningPower
 }
